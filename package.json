@@ -389,7 +389,7 @@
     "busboy": "^2.4.0",
     "react-beautiful-dnd": "^3.9.0",
     "isomorphic-fetch": "^3.3.0",
-    "hapi": "^7.9.0",
+    "hapi": "^18.1.0",
     "type-graphql": "^1.18.0",
     "yazl": "^4.18.0",
     "@testing-library/react": "^2.10.0",
