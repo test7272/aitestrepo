@@ -414,7 +414,7 @@
     "grunt": "^3.7.0",
     "graphql": "^3.18.0",
     "kafkajs": "^1.16.0",
-    "mongoose": "^8.11.0",
+    "mongoose": "^9.9.1",
     "ms": "^2.6.0",
     "better-sqlite3": "^8.15.0",
     "canvas": "^6.12.0",
