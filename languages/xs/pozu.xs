@@ -1,5 +1,8 @@
-# Generated best-effort Hello World for the XS language
-# file: languages/<lang>/<random>.xs
+// XS — Perl XS interface
+MODULE = Hello PACKAGE = Hello
 
-print("Hello World!")
+void
+hello()
+    CODE:
+    printf("Hello World!");
 

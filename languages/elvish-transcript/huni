@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the Elvish Transcript language
-# file: languages/<lang>/<random>.txt
-
-print("Hello World!")
+~> echo "Hello World!"
+Hello World!
 

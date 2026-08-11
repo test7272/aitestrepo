@@ -1,5 +1,10 @@
-# Generated best-effort Hello World for the Grammatical Framework language
-# file: languages/<lang>/<random>.gf
+// Grammatical Framework — multilingual grammars
+abstract Hello = {
+  cat Phrase;
+  fun helloWorld : Phrase;
+}
 
-print("Hello World!")
+concrete HelloEng of Hello = {
+  lin helloWorld = "Hello World!";
+}
 

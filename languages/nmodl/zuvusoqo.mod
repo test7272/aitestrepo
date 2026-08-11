@@ -1,5 +1,9 @@
-# Generated best-effort Hello World for the NMODL language
-# file: languages/<lang>/<random>.mod
+// NMODL — NEURON modelling language
+NEURON {
+    SUFFIX hello
+}
 
-print("Hello World!")
+PROCEDURE hello() {
+    printf("Hello World!\n")
+}
 

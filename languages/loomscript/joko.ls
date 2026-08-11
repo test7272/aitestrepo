@@ -1,5 +1,9 @@
-# Generated best-effort Hello World for the LoomScript language
-# file: languages/<lang>/<random>.ls
-
-print("Hello World!")
+// LoomScript — ActionScript-flavoured language
+package {
+    public class Hello {
+        public function Hello() {
+            trace("Hello World!");
+        }
+    }
+}
 

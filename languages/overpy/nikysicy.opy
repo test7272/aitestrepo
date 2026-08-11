@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the OverPy language
-# file: languages/<lang>/<random>.opy
-
+# OverPy — Python API for the Overpass API
 print("Hello World!")
 

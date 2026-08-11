@@ -1,5 +1,6 @@
-# Generated best-effort Hello World for the Glimmer JS language
-# file: languages/<lang>/<random>.gjs
+import Component from '@glimmer/component';
 
-print("Hello World!")
+export default class Hello extends Component {
+  <template><h1>Hello World!</h1></template>
+}
 

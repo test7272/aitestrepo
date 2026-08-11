@@ -1,15 +1,29 @@
 # aitestrepo
 
-A chaos repository depending on **3212** packages, submodules, real language examples and automation files — plus **every** (827) language in the current GitHub Linguist languages.yml.
+A chaos repository depending on **3250** packages, submodules, real language examples and automation files — plus **every** (827) language in the current GitHub Linguist languages.yml.
 
 ## Languages
 
 - **827 languages ship real files** under `languages/<lang>/` with a **random base filename per run** (e.g. `languages/python/xukybi.py`; Brainfuck stays at the stable `languages/brainfuck/hello.bf` so the interpreter and docs always match) — detected from the current GitHub Linguist languages.yml, parsed at generation time. File names, submodule folder names and the repo name are all randomized on every run.
-- **488 are genuine programs**: 37 of them are executed in CI and verified to print `Hello World!` (`.github/workflows/languages.yml`), the rest are real sources whose toolchain isn't on the CI runner.
+- **586 are genuine programs**: 37 of them are executed in CI and verified to print `Hello World!` (`.github/workflows/languages.yml`), the rest are real sources whose toolchain isn't on the CI runner.
 - **241 are valid markup/data/prose documents** (JSON, YAML, CSV, HTML, Mermaid, BibTeX, …).
-- **98 are best-effort generated** for obscure languages with no known example anywhere in the database — every language ships a file, per the author's requirement.
+- **0 placeholder files remain** — every programming language ships a real, hand-authored program.
 - Brainfuck is included with a real interpreter (`tools/bf.py`) and CI run.
 - Full metadata: `languages/LANGS.json` (aliases, extensions, interpreters, package ecosystems, run commands, status). See `languages/README.md` for the full table.
+
+## Uses everything
+
+19 real entry-point programs under `src/` import or load **every single dependency** the manifests declare:
+
+- `src/index.js` loads all 432 npm dependencies (`node src/index.js`), with a matching Jest test (`test/chaos.test.js`).
+- `src/main.py` imports all 530 pip packages (`python3 src/main.py`), with a pytest test (`tests/test_chaos.py`).
+- `src/main.rs` uses all 134 crates, `src/main.go` imports all 70 Go modules.
+- `src/main.rb` requires all 174 gems; `src/main.php` verifies all 114 composer packages via Composer's own API.
+- `src/Main.java` lists all 86 maven dependencies, `src/Hello.kt` all 40 gradle ones.
+- `src/Program.cs`, `src/main.dart`, `src/main.swift`, `src/main.pl`, `src/main.lua`, `src/main.ml`, `src/Hello.scala`, `src/main.cpp` cover NuGet, pub, SwiftPM, CPAN, LuaRocks, OPAM, sbt and C/C++ (Conan + vcpkg) the same way.
+- `tools/uses_everything.sh` runs every ecosystem checker in one shot.
+
+Because the dependency lists are re-shuffled per run, these sources are regenerated to always match the exact manifests in this repository — every package you see in the tables above is actually exercised by code.
 
 ## Dependency counts
 
@@ -34,10 +48,10 @@ A chaos repository depending on **3212** packages, submodules, real language exa
 | C/C++ | vcpkg | 65 |
 | Scala | sbt | 42 |
 | Git repositories | submodules | 12 |
-| Bot / config / CI files | — | 91 |
+| Bot / config / CI files | — | 129 |
 | Deploy targets | GitHub Actions workflows | 38 |
 | Language examples | — | 827 |
-| **Total** | | **3212** |
+| **Total** | | **3250** |
 
 ## Deploy to everything
 
@@ -57,7 +71,7 @@ Also: Swift Package Manager, CocoaPods, Carthage, Hex, Rebar3, deps.edn, sbt, op
 - Stale bot (.github/workflows/stale.yml) — flags inactive issues/PRs (never auto-closes)
 - Release Please (.github/workflows/release.yml) — semantic versioning + changelog + GitHub Releases
 - Greetings (.github/workflows/hello.yml) — welcomes first-time contributors
-- CI (.github/workflows/ci.yml) — installs & tests every ecosystem
+- CI (.github/workflows/ci.yml) — installs & tests every ecosystem, including a step that loads every declared dependency
 - Lint (.github/workflows/lint.yml) — eslint/prettier/ruff/black/mypy/clippy/golangci
 - Languages (.github/workflows/languages.yml) — executes every CI-capable language example
 

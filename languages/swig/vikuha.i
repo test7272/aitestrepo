@@ -1,5 +1,13 @@
-# Generated best-effort Hello World for the SWIG language
-# file: languages/<lang>/<random>.i
+// SWIG interface file
+%module hello
+%{
+#include <stdio.h>
+%}
 
-print("Hello World!")
+%inline %{
+int hello(void) {
+    printf("Hello World!\n");
+    return 0;
+}
+%}
 

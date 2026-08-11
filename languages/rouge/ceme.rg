@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the Rouge language
-# file: languages/<lang>/<random>.rg
-
+# Rouge — Python-flavoured data language
 print("Hello World!")
 

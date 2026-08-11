@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Verse language
-# file: languages/<lang>/<random>.verse
+using { System }
 
-print("Hello World!")
+main() : void =
+    Print("Hello World!")
 

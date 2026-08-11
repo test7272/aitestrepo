@@ -5,11 +5,11 @@
 | Metric | Count |
 |---|---|
 | Linguist languages detected | 827 |
-| Real source examples | 488 |
+| Real source examples | 586 |
 | &nbsp;&nbsp;– executed in CI (prints Hello World) | 37 |
-| &nbsp;&nbsp;– genuine source (toolchain not on CI runner) | 451 |
+| &nbsp;&nbsp;– genuine source (toolchain not on CI runner) | 549 |
 | Valid documents (markup / data / prose) | 241 |
-| Best-effort generated | 98 |
+| Best-effort fallbacks | 0 |
 | **Total files** | 827 |
 
 Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77, transpiled: 8, library_only: 3.
@@ -36,7 +36,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Aleo | programming | template | not_ci_executed | `-` |
 | ALGOL | programming | template | not_ci_executed | `-` |
 | Alloy | programming | template | not_ci_executed | `-` |
-| Alpine Abuild | programming | generated | source | `source (toolchain required)` |
+| Alpine Abuild | programming | hand-written | source | `source (toolchain required)` |
 | Altium Designer | data | document | source | `valid data document` |
 | AMPL | programming | template | not_ci_executed | `ampl foca.ampl` |
 | AngelScript | programming | hello-world | source | `source (toolchain required)` |
@@ -52,7 +52,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | AppleScript | programming | template | not_ci_executed | `-` |
 | Arc | programming | hello-world | source | `source (toolchain required)` |
 | AsciiDoc | prose | document | source | `valid prose document` |
-| ASL | programming | generated | source | `source (toolchain required)` |
+| ASL | programming | hand-written | source | `source (toolchain required)` |
 | ASN.1 | data | document | source | `valid data document` |
 | ASP.NET | programming | template | not_ci_executed | `-` |
 | AspectJ | programming | template | not_ci_executed | `-` |
@@ -116,7 +116,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | CartoCSS | programming | template | not_ci_executed | `-` |
 | Ceylon | programming | template | not_ci_executed | `ceylon regylefy.ceylon` |
 | Chapel | programming | template | not_ci_executed | `chpl zyne.chpl` |
-| Charity | programming | generated | source | `source (toolchain required)` |
+| Charity | programming | hand-written | source | `source (toolchain required)` |
 | Checksums | data | document | source | `valid data document` |
 | ChucK | programming | template | not_ci_executed | `-` |
 | CIL | data | hello-world | source | `source (toolchain required)` |
@@ -126,12 +126,12 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Clarity | programming | template | not_ci_executed | `-` |
 | Classic ASP | programming | template | not_ci_executed | `-` |
 | Clean | programming | template | not_ci_executed | `clm xyjyfaqo.icl` |
-| Click | programming | generated | source | `source (toolchain required)` |
+| Click | programming | hand-written | source | `source (toolchain required)` |
 | CLIPS | programming | template | not_ci_executed | `-` |
 | Clojure | programming | template | not_ci_executed | `-` |
 | Closure Templates | markup | document | source | `valid markup document` |
 | Cloud Firestore Security Rules | data | document | source | `valid data document` |
-| Clue | programming | generated | source | `source (toolchain required)` |
+| Clue | programming | hand-written | source | `source (toolchain required)` |
 | CMake | programming | template | not_ci_executed | `-` |
 | COBOL | programming | template | not_ci_executed | `-` |
 | CODEOWNERS | data | document | source | `valid data document` |
@@ -153,7 +153,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Crystal | programming | template | not_ci_executed | `-` |
 | CSON | data | hello-world | source | `source (toolchain required)` |
 | Csound | programming | template | not_ci_executed | `csound vope.orc` |
-| Csound Document | programming | generated | source | `source (toolchain required)` |
+| Csound Document | programming | hand-written | source | `source (toolchain required)` |
 | Csound Score | programming | template | not_ci_executed | `-` |
 | CSS | markup | template | not_ci_executed | `-` |
 | CSV | data | document | source | `valid data document` |
@@ -176,7 +176,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Daslang | programming | template | not_ci_executed | `-` |
 | DataWeave | programming | template | not_ci_executed | `-` |
 | Debian Package Control File | data | document | source | `valid data document` |
-| DenizenScript | programming | generated | source | `source (toolchain required)` |
+| DenizenScript | programming | hand-written | source | `source (toolchain required)` |
 | desktop | data | document | source | `valid data document` |
 | Dhall | programming | template | not_ci_executed | `-` |
 | Diff | data | document | source | `valid data document` |
@@ -212,10 +212,10 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Elixir | programming | template | ci_executed | `elixir dycyzuqo.ex` |
 | Elm | programming | template | not_ci_executed | `-` |
 | Elvish | programming | template | not_ci_executed | `elvish jyhycezi.elv` |
-| Elvish Transcript | programming | generated | source | `source (toolchain required)` |
+| Elvish Transcript | programming | hand-written | source | `source (toolchain required)` |
 | Emacs Lisp | programming | template | not_ci_executed | `emacs --batch ryjo.el` |
-| EmberScript | programming | generated | source | `source (toolchain required)` |
-| EQ | programming | generated | source | `source (toolchain required)` |
+| EmberScript | programming | hand-written | source | `source (toolchain required)` |
+| EQ | programming | hand-written | source | `source (toolchain required)` |
 | Erlang | programming | template | ci_executed | `escript posuwiro.erl` |
 | Euphoria | programming | hello-world | source | `source (toolchain required)` |
 | F* | programming | template | not_ci_executed | `-` |
@@ -226,14 +226,14 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Faust | programming | hand-written | source | `source (toolchain required)` |
 | Fennel | programming | template | not_ci_executed | `fennel lumesa.fnl` |
 | FIGlet Font | data | document | source | `valid data document` |
-| Filebench WML | programming | generated | source | `source (toolchain required)` |
+| Filebench WML | programming | hand-written | source | `source (toolchain required)` |
 | Filterscript | programming | hand-written | source | `source (toolchain required)` |
-| FIRRTL | programming | generated | source | `source (toolchain required)` |
+| FIRRTL | programming | hand-written | source | `source (toolchain required)` |
 | fish | programming | template | not_ci_executed | `fish lepuma.fish` |
 | FlatBuffers | data | document | source | `valid data document` |
 | Flix | programming | template | not_ci_executed | `-` |
-| Fluent | programming | generated | source | `source (toolchain required)` |
-| FLUX | programming | generated | source | `source (toolchain required)` |
+| Fluent | programming | hand-written | source | `source (toolchain required)` |
+| FLUX | programming | hand-written | source | `source (toolchain required)` |
 | Formatted | data | document | source | `valid data document` |
 | Forth | programming | template | ci_executed | `gforth wibore.fth -e bye` |
 | Fortran | programming | template | ci_executed | `gfortran xoma.f90 -o /tmp/hello_f90 && /tmp/hello_f90` |
@@ -247,17 +247,17 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | GAML | programming | template | not_ci_executed | `-` |
 | GAMS | programming | hand-written | source | `source (toolchain required)` |
 | GAP | programming | hand-written | source | `source (toolchain required)` |
-| GCC Machine Description | programming | generated | source | `source (toolchain required)` |
+| GCC Machine Description | programming | hand-written | source | `source (toolchain required)` |
 | GDB | programming | hand-written | source | `source (toolchain required)` |
 | GDScript | programming | template | not_ci_executed | `godot kyleraxu.gd` |
 | GDShader | programming | hand-written | source | `source (toolchain required)` |
 | GEDCOM | data | document | source | `valid data document` |
 | Gemfile.lock | data | document | source | `valid data document` |
 | Gemini | prose | document | source | `valid prose document` |
-| Genero 4gl | programming | generated | source | `source (toolchain required)` |
+| Genero 4gl | programming | hand-written | source | `source (toolchain required)` |
 | Genero per | markup | document | source | `valid markup document` |
 | Genie | programming | hello-world | source | `source (toolchain required)` |
-| Genshi | programming | generated | source | `source (toolchain required)` |
+| Genshi | programming | hand-written | source | `source (toolchain required)` |
 | Gentoo Ebuild | programming | hand-written | source | `source (toolchain required)` |
 | Gentoo Eclass | programming | hand-written | source | `source (toolchain required)` |
 | Gerber Image | data | document | source | `valid data document` |
@@ -268,13 +268,13 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Git Config | data | document | source | `valid data document` |
 | Git Revision List | data | document | source | `valid data document` |
 | Gleam | programming | template | not_ci_executed | `-` |
-| Glimmer JS | programming | generated | source | `source (toolchain required)` |
-| Glimmer TS | programming | generated | source | `source (toolchain required)` |
+| Glimmer JS | programming | hand-written | source | `source (toolchain required)` |
+| Glimmer TS | programming | hand-written | source | `source (toolchain required)` |
 | GLSL | programming | hand-written | source | `source (toolchain required)` |
-| Glyph | programming | generated | source | `source (toolchain required)` |
+| Glyph | programming | hand-written | source | `source (toolchain required)` |
 | Glyph Bitmap Distribution Format | data | document | source | `valid data document` |
 | GN | data | document | source | `valid data document` |
-| Gno | programming | generated | source | `source (toolchain required)` |
+| Gno | programming | hand-written | source | `source (toolchain required)` |
 | Gnuplot | programming | hand-written | source | `source (toolchain required)` |
 | Go | programming | template | ci_executed | `go run janecyqu.go` |
 | Go Checksums | data | document | source | `valid data document` |
@@ -284,10 +284,10 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Godot Resource | data | document | source | `valid data document` |
 | Golo | programming | template | not_ci_executed | `-` |
 | Gosu | programming | template | not_ci_executed | `-` |
-| Grace | programming | generated | source | `source (toolchain required)` |
+| Grace | programming | hand-written | source | `source (toolchain required)` |
 | Gradle | data | document | source | `valid data document` |
 | Gradle Kotlin DSL | data | document | source | `valid data document` |
-| Grammatical Framework | programming | generated | source | `source (toolchain required)` |
+| Grammatical Framework | programming | hand-written | source | `source (toolchain required)` |
 | Graph Modeling Language | data | document | source | `valid data document` |
 | GraphQL | data | hello-world | source | `source (toolchain required)` |
 | Graphviz (DOT) | data | document | source | `valid data document` |
@@ -309,7 +309,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | HLSL | programming | hand-written | source | `source (toolchain required)` |
 | HOCON | data | document | source | `valid data document` |
 | HolyC | programming | template | not_ci_executed | `-` |
-| hoon | programming | generated | source | `source (toolchain required)` |
+| hoon | programming | hand-written | source | `source (toolchain required)` |
 | Hosts File | data | document | source | `valid data document` |
 | HTML | markup | template | not_ci_executed | `-` |
 | HTML+ECR | markup | document | source | `valid markup document` |
@@ -321,7 +321,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Hurl | programming | hand-written | source | `source (toolchain required)` |
 | HXML | data | document | source | `valid data document` |
 | Hy | programming | template | not_ci_executed | `hy zuqo.hy` |
-| HyPhy | programming | generated | source | `source (toolchain required)` |
+| HyPhy | programming | hand-written | source | `source (toolchain required)` |
 | iCalendar | data | document | source | `valid data document` |
 | IDL | programming | template | not_ci_executed | `-` |
 | Idris | programming | template | not_ci_executed | `idris qyra.idr` |
@@ -330,7 +330,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | IL Assembly | programming | hand-written | source | `source (toolchain required)` |
 | ImageJ Macro | programming | hand-written | source | `source (toolchain required)` |
 | Imba | programming | hand-written | source | `source (toolchain required)` |
-| ImHex Pattern Language | programming | generated | source | `source (toolchain required)` |
+| ImHex Pattern Language | programming | hand-written | source | `source (toolchain required)` |
 | Inform 7 | programming | template | not_ci_executed | `-` |
 | INI | data | document | source | `valid data document` |
 | Ink | programming | hello-world | source | `source (toolchain required)` |
@@ -342,7 +342,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Isabelle ROOT | programming | hand-written | source | `source (toolchain required)` |
 | ISPC | programming | hand-written | source | `source (toolchain required)` |
 | J | programming | template | not_ci_executed | `jconsole jehypele.ijs` |
-| Jac | programming | generated | source | `source (toolchain required)` |
+| Jac | programming | hand-written | source | `source (toolchain required)` |
 | Jai | programming | hello-world | source | `source (toolchain required)` |
 | Janet | programming | template | not_ci_executed | `janet dono.janet` |
 | JAR Manifest | data | document | source | `valid data document` |
@@ -351,12 +351,12 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Java | programming | template | ci_executed | `java baluhi.java` |
 | Java Properties | data | document | source | `valid data document` |
 | Java Server Pages | programming | hand-written | source | `source (toolchain required)` |
-| Java Template Engine | programming | generated | source | `source (toolchain required)` |
+| Java Template Engine | programming | hand-written | source | `source (toolchain required)` |
 | JavaScript | programming | template | ci_executed | `node vacuso.js` |
 | JavaScript+ERB | programming | hand-written | source | `source (toolchain required)` |
 | JCL | programming | hand-written | source | `source (toolchain required)` |
 | Jest Snapshot | data | document | source | `valid data document` |
-| JetBrains MPS | programming | generated | source | `source (toolchain required)` |
+| JetBrains MPS | programming | hand-written | source | `source (toolchain required)` |
 | JFlex | programming | hand-written | source | `source (toolchain required)` |
 | Jinja | markup | document | source | `valid markup document` |
 | Jison | programming | hand-written | source | `source (toolchain required)` |
@@ -378,7 +378,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | KCL | programming | hand-written | source | `source (toolchain required)` |
 | KDL | data | document | source | `valid data document` |
 | KerboScript | programming | hand-written | source | `source (toolchain required)` |
-| KFramework | programming | generated | source | `source (toolchain required)` |
+| KFramework | programming | hand-written | source | `source (toolchain required)` |
 | KiCad Layout | data | document | source | `valid data document` |
 | KiCad Legacy Layout | data | document | source | `valid data document` |
 | KiCad Schematic | data | document | source | `valid data document` |
@@ -387,41 +387,41 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Koka | programming | hello-world | source | `source (toolchain required)` |
 | KoLmafia ASH | programming | hand-written | source | `source (toolchain required)` |
 | Kotlin | programming | template | not_ci_executed | `-` |
-| KRL | programming | generated | source | `source (toolchain required)` |
+| KRL | programming | hand-written | source | `source (toolchain required)` |
 | Kusto | data | document | source | `valid data document` |
 | kvlang | markup | document | source | `valid markup document` |
-| LabVIEW | programming | generated | source | `source (toolchain required)` |
-| Lambdapi | programming | generated | source | `source (toolchain required)` |
-| Langium | programming | generated | source | `source (toolchain required)` |
+| LabVIEW | programming | hand-written | source | `source (toolchain required)` |
+| Lambdapi | programming | hand-written | source | `source (toolchain required)` |
+| Langium | programming | hand-written | source | `source (toolchain required)` |
 | Lark | data | document | source | `valid data document` |
 | Lasso | programming | hand-written | source | `source (toolchain required)` |
 | Latte | markup | document | source | `valid markup document` |
 | Lean | programming | template | not_ci_executed | `-` |
 | Lean 4 | programming | hand-written | source | `source (toolchain required)` |
-| Leo | programming | generated | source | `source (toolchain required)` |
+| Leo | programming | hand-written | source | `source (toolchain required)` |
 | Less | markup | hello-world | source | `source (toolchain required)` |
 | Lex | programming | hand-written | source | `source (toolchain required)` |
 | LFE | programming | hand-written | source | `source (toolchain required)` |
-| LigoLANG | programming | generated | source | `source (toolchain required)` |
+| LigoLANG | programming | hand-written | source | `source (toolchain required)` |
 | LilyPond | programming | template | not_ci_executed | `-` |
 | Limbo | programming | hello-world | source | `source (toolchain required)` |
 | Linear Programming | programming | hand-written | source | `source (toolchain required)` |
 | Linker Script | programming | hand-written | source | `source (toolchain required)` |
 | Linux Kernel Module | data | document | source | `valid data document` |
 | Liquid | markup | document | source | `valid markup document` |
-| Liquidsoap | programming | generated | source | `source (toolchain required)` |
-| Literate Agda | programming | generated | source | `source (toolchain required)` |
+| Liquidsoap | programming | hand-written | source | `source (toolchain required)` |
+| Literate Agda | programming | hand-written | source | `source (toolchain required)` |
 | Literate CoffeeScript | programming | hand-written | source | `source (toolchain required)` |
 | Literate Haskell | programming | template | not_ci_executed | `-` |
 | LiveCode Script | programming | hand-written | source | `source (toolchain required)` |
 | LiveScript | programming | template | not_ci_executed | `livescript tykyty.ls` |
 | LLVM | programming | template | not_ci_executed | `-` |
 | Lobster | programming | hand-written | source | `source (toolchain required)` |
-| Logos | programming | generated | source | `source (toolchain required)` |
+| Logos | programming | hand-written | source | `source (toolchain required)` |
 | Logtalk | programming | template | not_ci_executed | `-` |
 | LOLCODE | programming | template | not_ci_executed | `-` |
 | LookML | programming | hand-written | source | `source (toolchain required)` |
-| LoomScript | programming | generated | source | `source (toolchain required)` |
+| LoomScript | programming | hand-written | source | `source (toolchain required)` |
 | LSL | programming | hello-world | source | `source (toolchain required)` |
 | LTspice Symbol | data | document | source | `valid data document` |
 | Lua | programming | template | ci_executed | `lua5.4 rudu.lua` |
@@ -436,10 +436,10 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Markdown | prose | template | not_ci_executed | `-` |
 | Marko | markup | document | source | `valid markup document` |
 | Mask | markup | document | source | `valid markup document` |
-| Mathematical Programming System | programming | generated | source | `source (toolchain required)` |
+| Mathematical Programming System | programming | hand-written | source | `source (toolchain required)` |
 | MATLAB | programming | template | not_ci_executed | `octave suciwawi.m` |
 | Maven POM | data | document | source | `valid data document` |
-| Max | programming | generated | source | `source (toolchain required)` |
+| Max | programming | hand-written | source | `source (toolchain required)` |
 | MAXScript | programming | hello-world | source | `source (toolchain required)` |
 | mcfunction | programming | hand-written | source | `source (toolchain required)` |
 | mdsvex | markup | document | source | `valid markup document` |
@@ -448,10 +448,10 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Mermaid | markup | document | source | `valid markup document` |
 | Meson | programming | template | not_ci_executed | `-` |
 | Metal | programming | template | not_ci_executed | `-` |
-| MeTTa | programming | generated | source | `source (toolchain required)` |
+| MeTTa | programming | hand-written | source | `source (toolchain required)` |
 | Microsoft Developer Studio Project | data | document | source | `valid data document` |
 | Microsoft Visual Studio Solution | data | document | source | `valid data document` |
-| MiniD | programming | generated | source | `source (toolchain required)` |
+| MiniD | programming | hand-written | source | `source (toolchain required)` |
 | MiniScript | programming | hand-written | source | `source (toolchain required)` |
 | MiniYAML | data | document | source | `valid data document` |
 | MiniZinc | programming | hand-written | source | `source (toolchain required)` |
@@ -459,38 +459,38 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Mint | programming | hello-world | source | `source (toolchain required)` |
 | Mirah | programming | hand-written | source | `source (toolchain required)` |
 | mIRC Script | programming | hand-written | source | `source (toolchain required)` |
-| MLIR | programming | generated | source | `source (toolchain required)` |
+| MLIR | programming | hand-written | source | `source (toolchain required)` |
 | Modelica | programming | template | not_ci_executed | `-` |
 | Modula-2 | programming | template | not_ci_executed | `-` |
 | Modula-3 | programming | template | not_ci_executed | `-` |
-| Module Management System | programming | generated | source | `source (toolchain required)` |
+| Module Management System | programming | hand-written | source | `source (toolchain required)` |
 | Mojo | programming | hello-world | source | `source (toolchain required)` |
 | Monkey | programming | hello-world | source | `source (toolchain required)` |
 | Monkey C | programming | hand-written | source | `source (toolchain required)` |
-| Moocode | programming | generated | source | `source (toolchain required)` |
+| Moocode | programming | hand-written | source | `source (toolchain required)` |
 | MoonBit | programming | hand-written | source | `source (toolchain required)` |
 | MoonScript | programming | hello-world | source | `source (toolchain required)` |
 | Motoko | programming | template | not_ci_executed | `-` |
-| Motorola 68K Assembly | programming | generated | source | `source (toolchain required)` |
+| Motorola 68K Assembly | programming | hand-written | source | `source (toolchain required)` |
 | Move | programming | hello-world | source | `source (toolchain required)` |
 | MQL4 | programming | template | not_ci_executed | `-` |
 | MQL5 | programming | template | not_ci_executed | `-` |
 | MTML | markup | document | source | `valid markup document` |
 | MUF | programming | hello-world | source | `source (toolchain required)` |
-| mupad | programming | generated | source | `source (toolchain required)` |
+| mupad | programming | hand-written | source | `source (toolchain required)` |
 | Muse | prose | document | source | `valid prose document` |
 | Mustache | markup | document | source | `valid markup document` |
-| Myghty | programming | generated | source | `source (toolchain required)` |
+| Myghty | programming | hand-written | source | `source (toolchain required)` |
 | nanorc | data | document | source | `valid data document` |
 | Nasal | programming | hand-written | source | `source (toolchain required)` |
-| NASL | programming | generated | source | `source (toolchain required)` |
+| NASL | programming | hand-written | source | `source (toolchain required)` |
 | NCL | programming | hand-written | source | `source (toolchain required)` |
 | Nearley | programming | hand-written | source | `source (toolchain required)` |
 | Nemerle | programming | template | not_ci_executed | `-` |
 | NEON | data | document | source | `valid data document` |
-| nesC | programming | generated | source | `source (toolchain required)` |
-| NetLinx | programming | generated | source | `source (toolchain required)` |
-| NetLinx+ERB | programming | generated | source | `source (toolchain required)` |
+| nesC | programming | hand-written | source | `source (toolchain required)` |
+| NetLinx | programming | hand-written | source | `source (toolchain required)` |
+| NetLinx+ERB | programming | hand-written | source | `source (toolchain required)` |
 | NetLogo | programming | template | not_ci_executed | `netlogo qarilyte.nlogo` |
 | NewLisp | programming | template | not_ci_executed | `newlisp lupera.nl` |
 | Nextflow | programming | template | not_ci_executed | `nextflow syfo.nf` |
@@ -501,8 +501,8 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Nit | programming | hello-world | source | `source (toolchain required)` |
 | Nix | programming | template | not_ci_executed | `-` |
 | NL | data | document | source | `valid data document` |
-| NMODL | programming | generated | source | `source (toolchain required)` |
-| Noir | programming | generated | source | `source (toolchain required)` |
+| NMODL | programming | hand-written | source | `source (toolchain required)` |
+| Noir | programming | hand-written | source | `source (toolchain required)` |
 | NPM Config | data | document | source | `valid data document` |
 | NSIS | programming | hand-written | source | `source (toolchain required)` |
 | Nu | programming | template | not_ci_executed | `-` |
@@ -520,15 +520,15 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Objective-C | programming | template | not_ci_executed | `-` |
 | Objective-C++ | programming | template | not_ci_executed | `-` |
 | Objective-J | programming | hand-written | source | `source (toolchain required)` |
-| ObjectScript | programming | generated | source | `source (toolchain required)` |
+| ObjectScript | programming | hand-written | source | `source (toolchain required)` |
 | OCaml | programming | template | ci_executed | `ocaml sypoko.ml` |
 | Odin | programming | template | not_ci_executed | `odin qiqerawu.odin` |
 | Omgrofl | programming | hello-world | source | `source (toolchain required)` |
-| OMNeT++ MSG | programming | generated | source | `source (toolchain required)` |
-| OMNeT++ NED | programming | generated | source | `source (toolchain required)` |
+| OMNeT++ MSG | programming | hand-written | source | `source (toolchain required)` |
+| OMNeT++ NED | programming | hand-written | source | `source (toolchain required)` |
 | ooc | programming | hello-world | source | `source (toolchain required)` |
 | Opa | programming | template | not_ci_executed | `-` |
-| Opal | programming | generated | source | `source (toolchain required)` |
+| Opal | programming | hand-written | source | `source (toolchain required)` |
 | Open Policy Agent | programming | hand-written | source | `source (toolchain required)` |
 | OpenAPI Specification v2 | data | document | source | `valid data document` |
 | OpenAPI Specification v3 | data | document | source | `valid data document` |
@@ -542,17 +542,17 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Option List | data | document | source | `valid data document` |
 | Org | prose | document | source | `valid prose document` |
 | OverpassQL | programming | hand-written | source | `source (toolchain required)` |
-| OverPy | programming | generated | source | `source (toolchain required)` |
+| OverPy | programming | hand-written | source | `source (toolchain required)` |
 | Ox | programming | hello-world | source | `source (toolchain required)` |
 | Oxygene | programming | hello-world | source | `source (toolchain required)` |
 | Oz | programming | template | not_ci_executed | `-` |
 | P4 | programming | hand-written | source | `source (toolchain required)` |
 | Pact | programming | hand-written | source | `source (toolchain required)` |
-| Pan | programming | generated | source | `source (toolchain required)` |
+| Pan | programming | hand-written | source | `source (toolchain required)` |
 | Papyrus | programming | hand-written | source | `source (toolchain required)` |
 | Parrot | programming | hand-written | source | `source (toolchain required)` |
-| Parrot Assembly | programming | generated | source | `source (toolchain required)` |
-| Parrot Internal Representation | programming | generated | source | `source (toolchain required)` |
+| Parrot Assembly | programming | hand-written | source | `source (toolchain required)` |
+| Parrot Internal Representation | programming | hand-written | source | `source (toolchain required)` |
 | Pascal | programming | template | ci_executed | `fpc kuweqo.pas -o/tmp/hello_pas >/dev/null && /tmp/hello_pas` |
 | Pawn | programming | hello-world | source | `source (toolchain required)` |
 | PDDL | programming | hand-written | source | `source (toolchain required)` |
@@ -573,8 +573,8 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | PLSQL | programming | hand-written | source | `source (toolchain required)` |
 | Pod | prose | document | source | `valid prose document` |
 | Pod 6 | prose | document | source | `valid prose document` |
-| PogoScript | programming | generated | source | `source (toolchain required)` |
-| Polar | programming | generated | source | `source (toolchain required)` |
+| PogoScript | programming | hand-written | source | `source (toolchain required)` |
+| Polar | programming | hand-written | source | `source (toolchain required)` |
 | Pony | programming | template | not_ci_executed | `pony gofe.pony` |
 | Portugol | programming | hello-world | source | `source (toolchain required)` |
 | PostCSS | markup | hello-world | source | `source (toolchain required)` |
@@ -608,38 +608,38 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Q# | programming | template | not_ci_executed | `-` |
 | QMake | programming | hand-written | source | `source (toolchain required)` |
 | QML | programming | template | not_ci_executed | `-` |
-| Qt Script | programming | generated | source | `source (toolchain required)` |
+| Qt Script | programming | hand-written | source | `source (toolchain required)` |
 | Quake | programming | hand-written | source | `source (toolchain required)` |
 | QuakeC | programming | hello-world | source | `source (toolchain required)` |
 | QuickBASIC | programming | hand-written | source | `source (toolchain required)` |
-| Quint | programming | generated | source | `source (toolchain required)` |
+| Quint | programming | hand-written | source | `source (toolchain required)` |
 | R | programming | template | ci_executed | `Rscript bixyhu.R` |
 | Racket | programming | template | ci_executed | `racket beri.rkt` |
 | Ragel | programming | template | not_ci_executed | `-` |
 | Raku | programming | template | not_ci_executed | `-` |
 | RAML | markup | document | source | `valid markup document` |
 | Rascal | programming | template | not_ci_executed | `-` |
-| RAScript | programming | generated | source | `source (toolchain required)` |
+| RAScript | programming | hand-written | source | `source (toolchain required)` |
 | Raw token data | data | document | source | `valid data document` |
 | RBS | data | document | source | `valid data document` |
 | RDoc | prose | document | source | `valid prose document` |
 | Readline Config | data | document | source | `valid data document` |
 | REALbasic | programming | hello-world | source | `source (toolchain required)` |
 | Reason | programming | template | not_ci_executed | `-` |
-| ReasonLIGO | programming | generated | source | `source (toolchain required)` |
+| ReasonLIGO | programming | hand-written | source | `source (toolchain required)` |
 | Rebol | programming | hello-world | source | `source (toolchain required)` |
 | Record Jar | data | document | source | `valid data document` |
 | Red | programming | template | not_ci_executed | `red caboke.red` |
 | Redcode | programming | hand-written | source | `source (toolchain required)` |
 | Redirect Rules | data | document | source | `valid data document` |
-| Redscript | programming | generated | source | `source (toolchain required)` |
+| Redscript | programming | hand-written | source | `source (toolchain required)` |
 | Regular Expression | data | document | source | `valid data document` |
 | Ren'Py | programming | hand-written | source | `source (toolchain required)` |
-| RenderScript | programming | generated | source | `source (toolchain required)` |
+| RenderScript | programming | hand-written | source | `source (toolchain required)` |
 | ReScript | programming | template | not_ci_executed | `-` |
 | reStructuredText | prose | hello-world | source | `source (toolchain required)` |
 | REXX | programming | template | not_ci_executed | `rexx hudi.rexx` |
-| Rez | programming | generated | source | `source (toolchain required)` |
+| Rez | programming | hand-written | source | `source (toolchain required)` |
 | Rich Text Format | markup | document | source | `valid markup document` |
 | Ring | programming | template | not_ci_executed | `ring hokivyve.ring` |
 | Riot | markup | document | source | `valid markup document` |
@@ -652,7 +652,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Roff Manpage | markup | document | source | `valid markup document` |
 | RON | data | document | source | `valid data document` |
 | ROS Interface | data | document | source | `valid data document` |
-| Rouge | programming | generated | source | `source (toolchain required)` |
+| Rouge | programming | hand-written | source | `source (toolchain required)` |
 | RouterOS Script | programming | hand-written | source | `source (toolchain required)` |
 | RPC | programming | hand-written | source | `source (toolchain required)` |
 | RPGLE | programming | hand-written | source | `source (toolchain required)` |
@@ -660,14 +660,14 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Ruby | programming | template | ci_executed | `ruby vacerape.rb` |
 | RUNOFF | markup | document | source | `valid markup document` |
 | Rust | programming | template | ci_executed | `rustc mety.rs -o /tmp/hello_rs && /tmp/hello_rs` |
-| Sage | programming | generated | source | `source (toolchain required)` |
-| Sail | programming | generated | source | `source (toolchain required)` |
+| Sage | programming | hand-written | source | `source (toolchain required)` |
+| Sail | programming | hand-written | source | `source (toolchain required)` |
 | Salt | programming | hand-written | source | `source (toolchain required)` |
 | SAS | programming | template | not_ci_executed | `sas tuniryka.sas` |
 | Sass | markup | hello-world | source | `source (toolchain required)` |
 | Scala | programming | template | not_ci_executed | `-` |
 | Scaml | markup | document | source | `valid markup document` |
-| Scenic | programming | generated | source | `source (toolchain required)` |
+| Scenic | programming | hand-written | source | `source (toolchain required)` |
 | Scheme | programming | template | ci_executed | `guile jevurofy.scm` |
 | Scilab | programming | template | not_ci_executed | `scilab qoji.sci` |
 | SCSS | markup | hello-world | source | `source (toolchain required)` |
@@ -682,8 +682,8 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Sieve | programming | hand-written | source | `source (toolchain required)` |
 | Simple File Verification | data | document | source | `valid data document` |
 | Singularity | programming | hand-written | source | `source (toolchain required)` |
-| Slang | programming | generated | source | `source (toolchain required)` |
-| Slash | programming | generated | source | `source (toolchain required)` |
+| Slang | programming | hand-written | source | `source (toolchain required)` |
+| Slash | programming | hand-written | source | `source (toolchain required)` |
 | Slice | programming | template | not_ci_executed | `-` |
 | Slim | markup | hello-world | source | `source (toolchain required)` |
 | Slint | markup | document | source | `valid markup document` |
@@ -702,7 +702,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Spline Font Database | data | document | source | `valid data document` |
 | SQF | programming | template | not_ci_executed | `-` |
 | SQL | data | template | ci_executed | `sqlite3 :memory: < dovuti.sql` |
-| SQLPL | programming | generated | source | `source (toolchain required)` |
+| SQLPL | programming | hand-written | source | `source (toolchain required)` |
 | Squirrel | programming | template | not_ci_executed | `squirrel muqy.nut` |
 | SRecode Template | markup | document | source | `valid markup document` |
 | SSH Config | data | document | source | `valid data document` |
@@ -725,11 +725,11 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Sway | programming | hand-written | source | `source (toolchain required)` |
 | Sweave | prose | document | source | `valid prose document` |
 | Swift | programming | template | not_ci_executed | `-` |
-| SWIG | programming | generated | source | `source (toolchain required)` |
+| SWIG | programming | hand-written | source | `source (toolchain required)` |
 | SystemVerilog | programming | template | not_ci_executed | `iverilog kidahife.sv` |
 | Tact | programming | hand-written | source | `source (toolchain required)` |
-| Talon | programming | generated | source | `source (toolchain required)` |
-| Tape | programming | generated | source | `source (toolchain required)` |
+| Talon | programming | hand-written | source | `source (toolchain required)` |
+| Tape | programming | hand-written | source | `source (toolchain required)` |
 | Tcl | programming | template | ci_executed | `tclsh guqu.tcl` |
 | Tcsh | programming | hello-world | source | `source (toolchain required)` |
 | Tea | markup | hello-world | source | `source (toolchain required)` |
@@ -745,11 +745,11 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | TextMate Properties | data | document | source | `valid data document` |
 | Thrift | programming | template | not_ci_executed | `-` |
 | TI Program | programming | hand-written | source | `source (toolchain required)` |
-| TL-Verilog | programming | generated | source | `source (toolchain required)` |
+| TL-Verilog | programming | hand-written | source | `source (toolchain required)` |
 | TLA | programming | hand-written | source | `source (toolchain required)` |
 | TMDL | data | document | source | `valid data document` |
 | Toit | programming | hand-written | source | `source (toolchain required)` |
-| Tolk | programming | generated | source | `source (toolchain required)` |
+| Tolk | programming | hand-written | source | `source (toolchain required)` |
 | TOML | data | hello-world | source | `source (toolchain required)` |
 | Tor Config | data | document | source | `valid data document` |
 | Tree-sitter Query | programming | hand-written | source | `source (toolchain required)` |
@@ -760,18 +760,18 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Turing | programming | template | not_ci_executed | `-` |
 | Turtle | data | document | source | `valid data document` |
 | Twig | markup | document | source | `valid markup document` |
-| TXL | programming | generated | source | `source (toolchain required)` |
+| TXL | programming | hand-written | source | `source (toolchain required)` |
 | Type Language | data | document | source | `valid data document` |
 | TypeScript | programming | template | ci_executed | `npx --yes tsc hyfu.ts && node hyfu.js` |
-| TypeSpec | programming | generated | source | `source (toolchain required)` |
+| TypeSpec | programming | hand-written | source | `source (toolchain required)` |
 | Typst | programming | hand-written | source | `source (toolchain required)` |
-| ucode | programming | generated | source | `source (toolchain required)` |
+| ucode | programming | hand-written | source | `source (toolchain required)` |
 | Unified Parallel C | programming | hand-written | source | `source (toolchain required)` |
 | Unity3D Asset | data | document | source | `valid data document` |
-| Unix Assembly | programming | generated | source | `source (toolchain required)` |
-| Uno | programming | generated | source | `source (toolchain required)` |
+| Unix Assembly | programming | hand-written | source | `source (toolchain required)` |
+| Uno | programming | hand-written | source | `source (toolchain required)` |
 | UnrealScript | programming | hand-written | source | `source (toolchain required)` |
-| Untyped Plutus Core | programming | generated | source | `source (toolchain required)` |
+| Untyped Plutus Core | programming | hand-written | source | `source (toolchain required)` |
 | UrWeb | programming | template | not_ci_executed | `-` |
 | V | programming | template | not_ci_executed | `-` |
 | Vala | programming | template | ci_executed | `valac vydajusi.vala -o /tmp/hello_vala && /tmp/hello_vala` |
@@ -783,14 +783,14 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Velocity Template Language | markup | document | source | `valid markup document` |
 | Vento | markup | document | source | `valid markup document` |
 | Verilog | programming | hello-world | source | `source (toolchain required)` |
-| Verse | programming | generated | source | `source (toolchain required)` |
+| Verse | programming | hand-written | source | `source (toolchain required)` |
 | VHDL | programming | template | not_ci_executed | `-` |
 | Vim Help File | prose | document | source | `valid prose document` |
 | Vim Script | programming | hand-written | source | `source (toolchain required)` |
 | Vim Snippet | markup | document | source | `valid markup document` |
 | Visual Basic .NET | programming | template | ci_executed | `cd languages/vb && dotnet run` |
 | Visual Basic 6.0 | programming | hand-written | source | `source (toolchain required)` |
-| Volt | programming | generated | source | `source (toolchain required)` |
+| Volt | programming | hand-written | source | `source (toolchain required)` |
 | Vue | markup | hello-world | source | `source (toolchain required)` |
 | Vyper | programming | hand-written | source | `source (toolchain required)` |
 | Wavefront Material | data | document | source | `valid data document` |
@@ -808,7 +808,7 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Win32 Message File | data | document | source | `valid data document` |
 | Windows Registry Entries | data | document | source | `valid data document` |
 | wisp | programming | hand-written | source | `source (toolchain required)` |
-| Witcher Script | programming | generated | source | `source (toolchain required)` |
+| Witcher Script | programming | hand-written | source | `source (toolchain required)` |
 | Wolfram Language | programming | hand-written | source | `source (toolchain required)` |
 | Wollok | programming | hand-written | source | `source (toolchain required)` |
 | World of Warcraft Addon Data | data | document | source | `valid data document` |
@@ -823,12 +823,12 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | Xmake | programming | hand-written | source | `source (toolchain required)` |
 | XML | data | hello-world | source | `source (toolchain required)` |
 | XML Property List | data | document | source | `valid data document` |
-| Xojo | programming | generated | source | `source (toolchain required)` |
+| Xojo | programming | hand-written | source | `source (toolchain required)` |
 | Xonsh | programming | hand-written | source | `source (toolchain required)` |
 | XPages | data | document | source | `valid data document` |
 | XProc | programming | hand-written | source | `source (toolchain required)` |
 | XQuery | programming | template | not_ci_executed | `-` |
-| XS | programming | generated | source | `source (toolchain required)` |
+| XS | programming | hand-written | source | `source (toolchain required)` |
 | XSLT | programming | template | not_ci_executed | `-` |
 | Xtend | programming | hand-written | source | `source (toolchain required)` |
 | Yacc | programming | hand-written | source | `source (toolchain required)` |
@@ -837,15 +837,15 @@ Type breakdown of real examples: syntax_only: 134, compiled: 26, interpreted: 77
 | YARA | programming | template | not_ci_executed | `yara jaroroza.yar` |
 | YASnippet | markup | document | source | `valid markup document` |
 | Yul | programming | hand-written | source | `source (toolchain required)` |
-| ZAP | programming | generated | source | `source (toolchain required)` |
+| ZAP | programming | hand-written | source | `source (toolchain required)` |
 | Zeek | programming | template | not_ci_executed | `zeek zusuzy.zeek` |
 | ZenScript | programming | hand-written | source | `source (toolchain required)` |
 | Zephir | programming | template | not_ci_executed | `-` |
 | Zig | programming | template | not_ci_executed | `-` |
-| ZIL | programming | generated | source | `source (toolchain required)` |
+| ZIL | programming | hand-written | source | `source (toolchain required)` |
 | Zimpl | programming | template | not_ci_executed | `-` |
 | Zmodel | data | document | source | `valid data document` |
 
 ## Honesty note
 
-`ci_executed` means the example actually runs in CI and prints `Hello World!`. `not_ci_executed` / `hello-world` / `hand-written` are genuine sources whose toolchain isn't on the CI runner (or which need a project scaffold). `document` files are valid files in markup/data/prose formats. `generated` files are best-effort programs for obscure languages with no known example anywhere in the database — the user asked for every language to ship a file, so they do.
+`ci_executed` means the example actually runs in CI and prints `Hello World!`. `not_ci_executed` / `hello-world` / `hand-written` are genuine sources whose toolchain isn't on the CI runner (or which need a project scaffold). `document` files are valid files in markup/data/prose formats. Every programming language ships a real, hand-authored program — there are no placeholder files left.

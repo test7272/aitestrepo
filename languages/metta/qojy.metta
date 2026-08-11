@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the MeTTa language
-# file: languages/<lang>/<random>.metta
+; MeTTa — a homoiconic language for cognition
+(= (hello) (println "Hello World!"))
 
-print("Hello World!")
+!(hello)
 

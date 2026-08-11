@@ -1,5 +1,10 @@
-# Generated best-effort Hello World for the LigoLANG language
-# file: languages/<lang>/<random>.ligo
+// LigoLANG — PascaLIGO smart contracts
+type storage is int;
+type parameter is unit;
+type return_ is list of operation * storage;
 
-print("Hello World!")
+function main (const p : parameter; const s : storage) : return_ is
+  begin
+    skip
+  end with ((nil : list (operation)), s)
 

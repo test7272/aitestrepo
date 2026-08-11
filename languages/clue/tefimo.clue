@@ -1,5 +1,8 @@
-# Generated best-effort Hello World for the Clue language
-# file: languages/<lang>/<random>.clue
+// Clue — a small systems language with C syntax and OCaml-style modules
+module Hello;
 
-print("Hello World!")
+let main() = {
+  println("Hello World!");
+  return 0;
+};
 

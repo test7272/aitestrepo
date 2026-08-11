@@ -1,5 +1,10 @@
-# Generated best-effort Hello World for the nesC language
-# file: languages/<lang>/<random>.nc
-
-print("Hello World!")
+// nesC — networked embedded systems C
+module HelloApp {
+  uses interface Boot;
+}
+implementation {
+  event void Boot.booted() {
+    call Leds.set(LEDS_RED);
+  }
+}
 

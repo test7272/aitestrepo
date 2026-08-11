@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Volt language
-# file: languages/<lang>/<random>.volt
+# Volt — Crystal-flavoured web language
+require "volt"
 
-print("Hello World!")
+puts "Hello World!"
 

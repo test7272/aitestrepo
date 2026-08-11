@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Noir language
-# file: languages/<lang>/<random>.nr
-
-print("Hello World!")
+// Noir — zero-knowledge language
+fn main() {
+    std::println("Hello World!");
+}
 

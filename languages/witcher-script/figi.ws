@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Witcher Script language
-# file: languages/<lang>/<random>.ws
-
-print("Hello World!")
+// WitcherScript — The Witcher 3 scripting
+function main() {
+    Log("Hello World!");
+}
 

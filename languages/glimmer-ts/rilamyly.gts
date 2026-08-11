@@ -1,5 +1,6 @@
-# Generated best-effort Hello World for the Glimmer TS language
-# file: languages/<lang>/<random>.gts
+import Component from '@glimmer/component';
 
-print("Hello World!")
+export default class Hello extends Component {
+  <template><h1>Hello World!</h1></template>
+}
 

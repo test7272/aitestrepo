@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the Sage language
-# file: languages/<lang>/<random>.sage
-
+# SageMath — mathematics software
 print("Hello World!")
 

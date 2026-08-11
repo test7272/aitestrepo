@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the ImHex Pattern Language language
-# file: languages/<lang>/<random>.hexpat
-
-print("Hello World!")
+// ImHex Pattern Language — binary structure definitions
+u32 magic;
+char title[8];
+if (magic == 0x12345678) {
+    std::print("magic ok");
+}
 

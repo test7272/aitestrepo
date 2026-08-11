@@ -1,5 +1,8 @@
-# Generated best-effort Hello World for the ObjectScript language
-# file: languages/<lang>/<random>.cls
+// ObjectScript — InterSystems IRIS
+Class Hello.World Extends %Persistent {
 
-print("Hello World!")
+  ClassMethod Main() {
+    Write "Hello World!",!
+  }
+}
 

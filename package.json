@@ -446,6 +446,7 @@
   },
   "devDependencies": {
     "semantic-release": "^23.0.0",
-    "@semantic-release/git": "^10.0.1"
+    "@semantic-release/git": "^10.0.1",
+    "jest": "^29.7.0"
   }
 }

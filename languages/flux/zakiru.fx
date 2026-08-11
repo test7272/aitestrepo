@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the FLUX language
-# file: languages/<lang>/<random>.fx
-
-print("Hello World!")
+// FLUX — fragment shader language
+float4 main() {
+    return float4(1.0, 0.0, 0.0, 1.0);
+}
 

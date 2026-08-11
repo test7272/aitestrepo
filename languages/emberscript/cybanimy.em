@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the EmberScript language
-# file: languages/<lang>/<random>.em
+// EmberScript — CoffeeScript-flavoured JavaScript
+class Hello
+  constructor: ->
+    console.log "Hello World!"
 
-print("Hello World!")
+new Hello
 

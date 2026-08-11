@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the mupad language
-# file: languages/<lang>/<random>.mu
-
-print("Hello World!")
+// MuPAD computer algebra language
+print(Unquoted, "Hello World!");
 

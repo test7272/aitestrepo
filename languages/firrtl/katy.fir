@@ -1,5 +1,9 @@
-# Generated best-effort Hello World for the FIRRTL language
-# file: languages/<lang>/<random>.fir
+module HelloWorld:
+  input io_clock : Clock
+  input io_reset : UInt<1>
+  output io_out : UInt<1>
 
-print("Hello World!")
+  wire out_val : UInt<1>
+  out_val <= io_clock ^ io_reset
+  io_out <= out_val
 

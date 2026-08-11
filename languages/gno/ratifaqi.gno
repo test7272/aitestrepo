@@ -1,5 +1,8 @@
-# Generated best-effort Hello World for the Gno language
-# file: languages/<lang>/<random>.gno
+/* Gno — GNUstep Objective-C variant */
+#include <Foundation/Foundation.h>
 
-print("Hello World!")
+int main(void) {
+  NSLog(@"Hello World!");
+  return 0;
+}
 

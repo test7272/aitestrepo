@@ -1,5 +1,6 @@
--- Generated best-effort Hello World for the SQLPL language
--- file: languages/<lang>/<random>.sql
-
-SELECT 'Hello World!';
+-- SQLPL — SQL/PSM procedural language
+CREATE PROCEDURE hello() AS
+BEGIN
+    SELECT 'Hello World!';
+END;
 

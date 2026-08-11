@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the PogoScript language
-# file: languages/<lang>/<random>.pogo
-
-print("Hello World!")
+// PogoScript — CoffeeScript-style
+console.log "Hello World!"
 

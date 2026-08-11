@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the TL-Verilog language
-# file: languages/<lang>/<random>.tlv
-
-print("Hello World!")
+\m4_TLV_version 1d: tl-x.org
+\SV
+\top
+|main
+@1
+   $display("Hello World!");
 

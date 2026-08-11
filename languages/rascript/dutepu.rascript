@@ -1,5 +1,6 @@
-# Generated best-effort Hello World for the RAScript language
-# file: languages/<lang>/<random>.rascript
-
-print("Hello World!")
+// RAScript — Roblox Animation Script
+function hello()
+    print("Hello World!")
+end
+hello()
 

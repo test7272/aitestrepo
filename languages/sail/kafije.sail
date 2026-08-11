@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Sail language
-# file: languages/<lang>/<random>.sail
+// Sail — architecture description language
+$include <prelude.sail>
 
-print("Hello World!")
+function hello() -> unit = { print_endline("Hello World!"); }
 

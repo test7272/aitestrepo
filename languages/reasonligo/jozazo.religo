@@ -1,5 +1,8 @@
-# Generated best-effort Hello World for the ReasonLIGO language
-# file: languages/<lang>/<random>.religo
+// ReasonLIGO — OCaml-flavoured LIGO
+type storage = int;
+type parameter = unit;
 
-print("Hello World!")
+let main = ((p: parameter), (s: storage)) => {
+  ([]: list(operation), s);
+};
 

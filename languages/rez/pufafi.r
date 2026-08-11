@@ -1,5 +1,6 @@
-# Generated best-effort Hello World for the Rez language
-# file: languages/<lang>/<random>.r
-
-cat("Hello World!\n")
+# Rez — VFX package manager
+name = "hello"
+version = "1.0.0"
+description = "Hello World"
+authors = ["chaos"]
 

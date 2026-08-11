@@ -1,5 +1,4 @@
-# Generated best-effort Hello World for the Liquidsoap language
-# file: languages/<lang>/<random>.liq
-
-print("Hello World!")
+# Liquidsoap — audio streaming language
+source = single("hello.mp3")
+output.dummy(source)
 

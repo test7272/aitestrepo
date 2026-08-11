@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Myghty language
-# file: languages/<lang>/<random>.myt
-
-print("Hello World!")
+<%doc>
+  Myghty — Python-based templating
+</%doc>
+Hello World!
 

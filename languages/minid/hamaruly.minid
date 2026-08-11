@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the MiniD language
-# file: languages/<lang>/<random>.minid
+// MiniD — scripting language
+module hello
 
-print("Hello World!")
+function main() {
+    writeln("Hello World!");
+}
 

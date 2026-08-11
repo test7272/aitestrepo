@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the Redscript language
-# file: languages/<lang>/<random>.reds
-
-print("Hello World!")
+// Redscript — Cyberpunk 2077 modding language
+class HelloWorld {
+    public func Run() -> Void {
+        LogChannel("Hello World!")
+    }
+}
 

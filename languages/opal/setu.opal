@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the Opal language
-# file: languages/<lang>/<random>.opal
-
-print("Hello World!")
+# Opal — Ruby to JavaScript compiler
+puts "Hello World!"
 

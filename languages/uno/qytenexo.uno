@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the Uno language
-# file: languages/<lang>/<random>.uno
-
-print("Hello World!")
+// Uno — Fuse app language
+public class Hello {
+    public static void Main() {
+        debug_log "Hello World!";
+    }
+}
 

@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Module Management System language
-# file: languages/<lang>/<random>.mms
-
-print("Hello World!")
+# MMS — VMS Module Management System
+hello: hello.c
+    cc hello.c
+    link hello
 

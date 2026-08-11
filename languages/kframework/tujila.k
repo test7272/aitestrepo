@@ -1,5 +1,11 @@
-# Generated best-effort Hello World for the KFramework language
-# file: languages/<lang>/<random>.k
+// K — the K framework definitional semantics
+module HELLO-SYNTAX
+  imports K-BASIC
+  syntax KItem ::= "hello"
+endmodule
 
-print("Hello World!")
+module HELLO
+  imports HELLO-SYNTAX
+  rule <k> hello => .K ... </k>
+endmodule
 

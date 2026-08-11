@@ -1,5 +1,9 @@
-# Generated best-effort Hello World for the OMNeT++ NED language
-# file: languages/<lang>/<random>.ned
+// OMNeT++ network description
+simple Hello {
+}
 
-print("Hello World!")
+network HelloNetwork {
+    submodules:
+        hello: Hello;
+}
 

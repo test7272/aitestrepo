@@ -1,16 +1,17 @@
-# Generated best-effort Hello World for the Unix Assembly language
-# file: languages/<lang>/<random>.s
+// x86-64 AT&T assembly (Linux)
+.section .rodata
+msg:
+    .ascii "Hello World!\n"
 
-.section .text
+.text
 .globl _start
 _start:
-  mov $1, %rax
-  mov $1, %rdi
-  lea msg(%rip), %rsi
-  mov $13, %rdx
-  syscall
-  mov $60, %rax
-  xor %rdi, %rdi
-  syscall
-msg: .ascii "Hello World!\n"
+    mov $1, %rax
+    mov $1, %rdi
+    lea msg(%rip), %rsi
+    mov $13, %rdx
+    syscall
+    mov $60, %rax
+    xor %rdi, %rdi
+    syscall
 

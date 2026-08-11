@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Slang language
-# file: languages/<lang>/<random>.slang
-
-print("Hello World!")
+// Slang — GPU shading language
+float4 main(float4 position : POSITION) : SV_Position {
+    return position;
+}
 

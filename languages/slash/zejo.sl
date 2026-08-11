@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Slash language
-# file: languages/<lang>/<random>.sl
-
-print("Hello World!")
+// Slash — a small functional language
+fn main() {
+    print("Hello World!");
+}
 

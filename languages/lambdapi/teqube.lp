@@ -1,5 +1,6 @@
-# Generated best-effort Hello World for the Lambdapi language
-# file: languages/<lang>/<random>.lp
+// Lambdapi — dependently-typed proof assistant
+constant hello : string;
 
-print("Hello World!")
+// a trivial proof: given any P, P => P
+constant idp : Π P : Prop, P -> P;
 

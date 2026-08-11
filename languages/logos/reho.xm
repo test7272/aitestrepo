@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the Logos language
-# file: languages/<lang>/<random>.xm
-
-print("Hello World!")
+// Logos — jailbreak tweak preprocessor
+%hook NSObject
+- (NSString *)description {
+    return @"Hello World!";
+}
+%end
 

@@ -1,5 +1,7 @@
-# Generated best-effort Hello World for the ASL language
-# file: languages/<lang>/<random>.asl
-
-print("Hello World!")
+// ASL — Arm Architecture Specification Language
+func main() => integer
+begin
+    print("Hello World!");
+    return 0;
+end;
 

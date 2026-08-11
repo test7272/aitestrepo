@@ -1,5 +1,9 @@
-# Generated best-effort Hello World for the Literate Agda language
-# file: languages/<lang>/<random>.lagda
+\begin{code}
+module hello where
 
-print("Hello World!")
+open import Data.String
+
+main : IO
+main = putStrLn "Hello World!"
+\end{code}
 

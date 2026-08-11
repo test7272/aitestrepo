@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Fluent language
-# file: languages/<lang>/<random>.ftl
-
-print("Hello World!")
+# Project Fluent — natural-language UI strings
+hello = Hello World!
+greeting = Hello, { $name }!
+goodbye = Goodbye!
 

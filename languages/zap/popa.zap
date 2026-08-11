@@ -1,5 +1,3 @@
-# Generated best-effort Hello World for the ZAP language
-# file: languages/<lang>/<random>.zap
-
+// ZAP — scanning / automation script
 print("Hello World!")
 

@@ -1,5 +1,5 @@
-# Generated best-effort Hello World for the Quint language
-# file: languages/<lang>/<random>.qnt
-
-print("Hello World!")
+// Quint — specification language (TLA+-inspired)
+module hello {
+    val greeting: str = "Hello World!"
+}
 

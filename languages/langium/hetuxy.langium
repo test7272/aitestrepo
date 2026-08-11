@@ -1,5 +1,10 @@
-# Generated best-effort Hello World for the Langium language
-# file: languages/<lang>/<random>.langium
+// Langium — DSL grammar language
+grammar HelloWorld
 
-print("Hello World!")
+entry Model: (greetings+=Greeting)*;
+
+Greeting: 'hello' name=ID;
+
+hidden terminal WS: /\s+/;
+terminal ID: /[_a-zA-Z][\w_]*/;
 
