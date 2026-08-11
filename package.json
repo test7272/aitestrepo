@@ -262,7 +262,7 @@
     "p-queue": "^6.18.0",
     "xss": "^2.16.0",
     "bluebird": "^4.15.0",
-    "@react-three/drei": "^6.6.0",
+    "@react-three/drei": "^10.7.8",
     "fastify": "^2.18.0",
     "react-query": "^1.17.0",
     "redis": "^1.16.0",
