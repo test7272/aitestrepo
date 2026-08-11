@@ -314,7 +314,7 @@
     "eslint-plugin-node": "^8.5.0",
     "element-plus": "^2.9.0",
     "mitt": "^6.10.0",
-    "@angular/common": "^6.8.0",
+    "@angular/common": "^22.1.1",
     "history": "^4.4.0",
     "twilio": "^5.2.0",
     "react-router-dom": "^4.10.0",
