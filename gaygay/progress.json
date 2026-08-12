@@ -9,8 +9,8 @@
     "prefix": "junk_"
   },
   "totalFiles": 1000,
-  "createdFiles": 64,
+  "createdFiles": 66,
   "status": "running",
-  "updatedAt": "2026-08-12T12:22:17.559Z",
-  "batch": 32
+  "updatedAt": "2026-08-12T12:22:19.398Z",
+  "batch": 33
 }
