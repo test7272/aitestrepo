@@ -1,7 +1,7 @@
 tzdata>=2.0.0
 readability-lxml>=3.6.0
 cohere>=2.5.0
-aiogram>=2.5.0
+aiogram>=3.30.0
 shapely>=1.7.0
 ansible>=2.1.0
 autobahn>=26.7.1
