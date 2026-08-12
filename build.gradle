@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.mongodb:mongodb-driver-sync:4.9.0'
     implementation 'androidx.compose.foundation:foundation:1.5.4'
     implementation 'io.netty:netty-all:4.1.91.Final'
-    implementation 'org.assertj:assertj-core:3.24.2'
+    implementation 'org.assertj:assertj-core:3.27.7'
     implementation 'org.eclipse.jetty:jetty-server:12.1.12'
     implementation 'org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin:1.9.10'
     implementation 'com.squareup.okhttp3:okhttp:4.10.0'
