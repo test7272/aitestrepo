@@ -160,7 +160,7 @@
     "@rollup/plugin-terser": "^3.7.0",
     "pg": "^4.10.0",
     "redux": "^8.4.0",
-    "puppeteer": "^1.15.0",
+    "puppeteer": "^25.5.0",
     "@testing-library/user-event": "^7.1.0",
     "fs-extra": "^7.1.0",
     "type-fest": "^6.18.0",
