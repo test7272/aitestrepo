@@ -18,4 +18,3 @@ package() {
 	cd "$builddir"
 	install -Dm755 hello "$pkgdir"/usr/bin/hello
 }
-

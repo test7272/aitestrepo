@@ -4,4 +4,3 @@ program hello.aleo {
         return 1u32;
     }
 }
-

@@ -2,4 +2,3 @@
   <p:output port="result"/>
   <p:identity/>
 </p:declare-step>
-

@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.gn
 
 print("Hello World!")
-

@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.dsc
 
 print("Hello World!")
-

@@ -2,4 +2,3 @@
 packet HelloPacket {
     string greeting = "Hello World!";
 }
-

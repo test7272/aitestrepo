@@ -2,4 +2,3 @@
 // file: languages/<lang>/<random>.gml
 
 show_message("Hello World!");
-

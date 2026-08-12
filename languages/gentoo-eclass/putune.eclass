@@ -3,4 +3,3 @@
 
 DESCRIPTION="Hello eclass"
 SLOT="0"
-

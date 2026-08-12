@@ -5,4 +5,3 @@ if (description) {
     script_name("Hello World");
 }
 display("Hello World!\n");
-

@@ -3,4 +3,3 @@
 <GLOBAL GREETING "Hello World!">
 <ROUTINE HELLO ()
     <TELL "Hello World!" #<CR>>
-

@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.dzn
 
 print("Hello World!")
-

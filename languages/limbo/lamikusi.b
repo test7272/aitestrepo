@@ -14,4 +14,3 @@ init(ctxt: ref Draw->Context, argv: list of string)
 	sys = load Sys Sys->PATH;
 	sys->print("Hello World\n");
 }
-

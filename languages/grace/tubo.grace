@@ -2,4 +2,3 @@
 method main {
     print "Hello World!"
 }
-

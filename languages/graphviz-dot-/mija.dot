@@ -1,4 +1,3 @@
 digraph Hello {
   a -> b;
 }
-

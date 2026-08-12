@@ -3,4 +3,3 @@
 |=  [* [* ~] ~]
 :-  %noun
 "Hello World!"
-

@@ -5,4 +5,3 @@ module {
     return %0 : i32
   }
 }
-

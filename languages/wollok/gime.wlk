@@ -3,4 +3,3 @@ object hello {
     console.println("Hello World!")
   }
 }
-

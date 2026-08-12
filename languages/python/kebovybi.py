@@ -1,4 +1,5 @@
 from collections import Counter, defaultdict, deque
+
 words = ["py", "js", "py", "go", "py", "rust"]
 print("counter:", Counter(words))
 dd = defaultdict(list)

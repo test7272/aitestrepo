@@ -7,4 +7,3 @@ implementation {
     call Leds.set(LEDS_RED);
   }
 }
-

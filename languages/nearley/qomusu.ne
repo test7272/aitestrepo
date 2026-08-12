@@ -2,4 +2,3 @@
 main -> "hello" {%
     () => "Hello World!"
 %}
-

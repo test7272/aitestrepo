@@ -4,4 +4,3 @@ class Hello
     console.log "Hello World!"
 
 new Hello
-

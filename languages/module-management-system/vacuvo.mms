@@ -2,4 +2,3 @@
 hello: hello.c
     cc hello.c
     link hello
-

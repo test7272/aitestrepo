@@ -4,4 +4,3 @@
     <p py:content="'Hello World!'"></p>
   </body>
 </html>
-

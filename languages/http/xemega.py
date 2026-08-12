@@ -3,4 +3,6 @@ def fib(n):
     for _ in range(n):
         a, b = b, a + b
     return a
+
+
 print("fib(10) =", fib(10))

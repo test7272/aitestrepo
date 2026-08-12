@@ -1,4 +1,3 @@
 SECTIONS {
   .text : { *(.text) }
 }
-

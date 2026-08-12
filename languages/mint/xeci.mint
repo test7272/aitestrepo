@@ -3,4 +3,3 @@ component Main {
     <div>"Hello World"</div>
   }
 }
-

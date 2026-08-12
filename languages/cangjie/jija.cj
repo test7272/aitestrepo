@@ -1,4 +1,3 @@
 main() {
   println("Hello World!")
 }
-

@@ -3,4 +3,3 @@
 %unicode
 %%
 [^\n]+   { System.out.println(yytext()); }
-

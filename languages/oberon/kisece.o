@@ -6,4 +6,3 @@ BEGIN
    Out.Open;
    Out.String('Hello World');
 END HelloWorld.
-

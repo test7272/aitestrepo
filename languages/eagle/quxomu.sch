@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.sch
 
 print("Hello World!")
-

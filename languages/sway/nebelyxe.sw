@@ -2,4 +2,3 @@ script;
 
 fn main() {
 }
-

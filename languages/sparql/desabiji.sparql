@@ -1,4 +1,3 @@
-SELECT ?h WHERE { 
-  VALUES ?h { "Hello World" } 
+SELECT ?h WHERE {
+  VALUES ?h { "Hello World" }
 }
-

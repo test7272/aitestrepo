@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.msg
 
 print("Hello World!")
-

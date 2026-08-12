@@ -5,4 +5,3 @@ type parameter = unit;
 let main = ((p: parameter), (s: storage)) => {
   ([]: list(operation), s);
 };
-

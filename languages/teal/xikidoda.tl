@@ -3,4 +3,3 @@ local function hello(): string
 end
 
 print(hello())
-

@@ -2,4 +2,3 @@
 function main() {
     Log("Hello World!");
 }
-

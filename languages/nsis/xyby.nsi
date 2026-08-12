@@ -5,4 +5,3 @@ OutFile "hello.exe"
 Section
   DetailPrint "Hello World!"
 SectionEnd
-

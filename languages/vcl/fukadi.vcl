@@ -7,4 +7,3 @@ backend default {
 sub vcl_recv {
   return (pass);
 }
-

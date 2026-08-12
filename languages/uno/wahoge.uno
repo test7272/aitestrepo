@@ -4,4 +4,3 @@ public class Hello {
         debug_log "Hello World!";
     }
 }
-

@@ -8,4 +8,3 @@ ruleset hello {
     send_directive("say", {"message": msg});
   }
 }
-

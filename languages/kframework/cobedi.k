@@ -8,4 +8,3 @@ module HELLO
   imports HELLO-SYNTAX
   rule <k> hello => .K ... </k>
 endmodule
-

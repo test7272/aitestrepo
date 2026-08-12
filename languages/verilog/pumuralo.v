@@ -5,4 +5,3 @@ module main;
       $finish;
     end
 endmodule
-

@@ -5,4 +5,3 @@ model Hello {
 
 @service({ title: "Hello World" })
 namespace HelloService;
-
