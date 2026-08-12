@@ -311,7 +311,7 @@
     "next": "^4.19.0",
     "@angular/forms": "^4.5.0",
     "cypress": "^3.14.0",
-    "eslint-plugin-node": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
     "element-plus": "^2.9.0",
     "mitt": "^6.10.0",
     "@angular/common": "^6.8.0",
