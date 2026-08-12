@@ -5,12 +5,12 @@
     "branch": "main",
     "folder": "gaygay",
     "count": 1000,
-    "sizeMB": 1,
-    "prefix": null
+    "sizeMB": 20,
+    "prefix": "junk_"
   },
   "totalFiles": 1000,
-  "createdFiles": 1000,
-  "status": "done",
-  "updatedAt": "2026-08-12T12:15:43.933Z",
+  "createdFiles": 2,
+  "status": "running",
+  "updatedAt": "2026-08-12T12:21:14.622Z",
   "batch": 1
 }
