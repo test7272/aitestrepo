@@ -1,6 +1,6 @@
 {
   "name": "aitestrepo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "description": "Depends on everything — npm, pip, cargo, gem, composer, maven, nuget, swiftpm, cocoapods, cpan, luarocks, opam, conan, vcpkg, sbt and more",
   "scripts": {
