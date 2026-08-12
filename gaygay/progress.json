@@ -8,9 +8,9 @@
     "sizeMB": 20,
     "prefix": "junk_"
   },
-  "totalFiles": 1000,
-  "createdFiles": 68,
+  "totalFiles": 932,
+  "createdFiles": 5,
   "status": "running",
-  "updatedAt": "2026-08-12T12:22:21.307Z",
-  "batch": 34
+  "updatedAt": "2026-08-12T12:22:36.360Z",
+  "batch": 1
 }
