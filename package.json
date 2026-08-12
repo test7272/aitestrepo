@@ -1,7 +1,7 @@
 {
   "name": "aitestrepo",
   "version": "0.2.0",
-  "private": true,
+  "private": false,
   "description": "Depends on everything — npm, pip, cargo, gem, composer, maven, nuget, swiftpm, cocoapods, cpan, luarocks, opam, conan, vcpkg, sbt and more",
   "scripts": {
     "start": "node src/index.js",
@@ -448,5 +448,9 @@
     "semantic-release": "^23.0.0",
     "@semantic-release/git": "^10.0.1",
     "jest": "^29.7.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
