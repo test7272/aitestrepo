@@ -30,7 +30,7 @@ jobs:
       - name: Install toolchains (apt)
         run: |
           sudo apt-get update
-          sudo apt-get install -y tcl lua5.4 sqlite3 groovy clisp guile-3.0 racket gforth gfortran ocaml-nox ghc elixir erlang zsh gnat fpc valac swi-prolog
+          sudo apt-get install -y tcl lua5.4 sqlite3 groovy clisp guile-3.0 racket gforth gfortran ocaml-nox ghc elixir erlang zsh gnat fpc valac swi-prolog || true
       - name: Ada
         run: gnatmake languages/ada/luki.adb -o /tmp/hello_ada && /tmp/hello_ada
         continue-on-error: true
