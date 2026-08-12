@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Mask language
-# file: languages/<lang>/<random>.mask
-
-print("Hello World!")
-

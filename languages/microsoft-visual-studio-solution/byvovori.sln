@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Microsoft Visual Studio Solution language
-# file: languages/<lang>/<random>.sln
-
-print("Hello World!")
-

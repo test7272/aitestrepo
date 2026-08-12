@@ -1,5 +1,0 @@
-(require '[clojure.string :as str])
-(println (str/join ", " ["a" "b" "c"]))
-(println (str/upper-case "hello"))
-(println (str/split "x-y-z" (re-pattern "-")))
-(println (str/trim "  pad  "))

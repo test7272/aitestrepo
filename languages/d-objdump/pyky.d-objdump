@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the D-ObjDump language
-# file: languages/<lang>/<random>.d-objdump
-
-print("Hello World!")
-

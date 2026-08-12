@@ -1,6 +1,0 @@
-protocol Hello {
-  record Greeting {
-    string text = "Hello World!";
-  }
-}
-

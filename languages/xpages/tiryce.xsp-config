@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the XPages language
-# file: languages/<lang>/<random>.xsp-config
-
-print("Hello World!")
-

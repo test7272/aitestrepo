@@ -1,6 +1,0 @@
-local f = io.open("scratch_demo.txt", "w")
-f:write("hello from lua io\n")
-f:close()
-local g = io.open("scratch_demo.txt", "r")
-print("read: " .. g:read("*a"):match("([^\n]+)"))
-g:close()

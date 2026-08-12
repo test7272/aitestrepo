@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Hello
-Exec=/bin/echo Hello World!
-

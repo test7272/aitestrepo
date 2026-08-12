@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Valve Data Format language
-# file: languages/<lang>/<random>.vdf
-
-print("Hello World!")
-

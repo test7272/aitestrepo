@@ -1,2 +1,0 @@
-writeInfo: "Hello World!"
-

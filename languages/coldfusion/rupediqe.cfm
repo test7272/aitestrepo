@@ -1,1 +1,0 @@
-<cfoutput>Hello World!</cfoutput>

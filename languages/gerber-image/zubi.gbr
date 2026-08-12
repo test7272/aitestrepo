@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Gerber Image language
-# file: languages/<lang>/<random>.gbr
-
-print("Hello World!")
-

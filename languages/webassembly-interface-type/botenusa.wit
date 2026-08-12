@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the WebAssembly Interface Type language
-# file: languages/<lang>/<random>.wit
-
-print("Hello World!")
-

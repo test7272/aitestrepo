@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Darcs Patch language
-# file: languages/<lang>/<random>.darcspatch
-
-print("Hello World!")
-

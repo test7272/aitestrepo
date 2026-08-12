@@ -1,6 +1,0 @@
-<script>
-  const greeting = "Hello World!";
-</script>
-
-<h1>{greeting}</h1>
-

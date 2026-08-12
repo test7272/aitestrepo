@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the SELinux Policy language
-# file: languages/<lang>/<random>.te
-
-print("Hello World!")
-

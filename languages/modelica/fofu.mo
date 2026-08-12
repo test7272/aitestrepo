@@ -1,2 +1,0 @@
-model Hello
-end Hello;

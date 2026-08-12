@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the NEON language
-# file: languages/<lang>/<random>.neon
-
-print("Hello World!")
-

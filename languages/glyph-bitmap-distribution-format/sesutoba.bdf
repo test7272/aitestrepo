@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the Glyph Bitmap Distribution Format language
-# file: languages/<lang>/<random>.bdf
-
-print("Hello World!")
-

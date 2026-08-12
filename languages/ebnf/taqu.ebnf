@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the EBNF language
-# file: languages/<lang>/<random>.ebnf
-
-print("Hello World!")
-

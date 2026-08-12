@@ -1,5 +1,0 @@
-# Generated best-effort Hello World for the RBS language
-# file: languages/<lang>/<random>.rbs
-
-print("Hello World!")
-

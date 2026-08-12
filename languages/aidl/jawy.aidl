@@ -1,1 +1,0 @@
-interface Hello { void hello(); }
