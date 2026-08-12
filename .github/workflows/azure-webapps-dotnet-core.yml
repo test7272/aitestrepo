@@ -24,11 +24,8 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '5'                 # set this to the .NET Core version to use
 
-on:
-  push:
-    branches: [ "main" ]
+"on":
   workflow_dispatch:
-
 permissions:
   contents: read
 

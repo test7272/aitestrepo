@@ -8,10 +8,8 @@
 
 name: Build and Deploy to IKS
 
-on:
-  push:
-    branches: [ "main" ]
-
+"on":
+  workflow_dispatch:
 # Environment variables available to all jobs and steps in this workflow
 env:
   GITHUB_SHA: ${{ github.sha }}
