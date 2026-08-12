@@ -1,425 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noise File Generator</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-
-        .controls {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .control-group {
-            flex: 1;
-            min-width: 150px;
-        }
-
-        label {
-            display: block;
-            color: #333;
-            font-weight: 600;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-
-        input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #e0e0e0;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: border-color 0.3s;
-        }
-
-        input[type="number"]:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
-            width: 100%;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .progress-section {
-            margin-top: 30px;
-            display: none;
-        }
-
-        .progress-section.active {
-            display: block;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 30px;
-            background: #f0f0f0;
-            border-radius: 15px;
-            overflow: hidden;
-            margin-bottom: 15px;
-            border: 2px solid #e0e0e0;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            width: 0%;
-            transition: width 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .progress-text {
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .file-list {
-            max-height: 300px;
-            overflow-y: auto;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            padding: 10px;
-            background: #f9f9f9;
-            margin-bottom: 15px;
-        }
-
-        .file-item {
-            padding: 8px;
-            background: white;
-            margin-bottom: 5px;
-            border-radius: 3px;
-            font-size: 13px;
-            color: #333;
-            border-left: 3px solid #667eea;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .file-item a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .file-item a:hover {
-            text-decoration: underline;
-        }
-
-        .download-all {
-            background: #28a745;
-            margin-top: 15px;
-        }
-
-        .download-all:hover {
-            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
-        }
-
-        .stats {
-            background: #f0f0f0;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .stat-item {
-            margin: 8px 0;
-            color: #333;
-            font-size: 14px;
-        }
-
-        .stat-value {
-            font-weight: 600;
-            color: #667eea;
-        }
-
-        .error {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 12px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            display: none;
-            border: 1px solid #f5c6cb;
-        }
-
-        .error.active {
-            display: block;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aitestrepo — The Chaos Repository</title>
+<meta name="description" content="A chaos repository that depends on everything: every package ecosystem, a real file for every GitHub language, 38+ deploy workflows, automerge, bots, packages & releases.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { text-align: center; padding-bottom: 40px; border-bottom: 1px solid #21262d; margin-bottom: 40px; }
+  h1 { font-size: 2.6rem; letter-spacing: -1px; }
+  h1 span { color: #3fb950; }
+  .sub { color: #8b949e; margin-top: 10px; font-size: 1.05rem; }
+  .badges { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .badge { background: #21262d; border: 1px solid #30363d; color: #e6edf3; border-radius: 20px; padding: 4px 12px; font-size: .8rem; }
+  .badge.green { background: #16291a; border-color: #238636; color: #3fb950; }
+  h2 { font-size: 1.3rem; margin: 36px 0 12px; color: #f0f6fc; }
+  p, li { color: #c9d1d9; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 20px 24px; margin: 14px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .grid .card { margin: 0; }
+  .num { font-size: 1.8rem; font-weight: 700; color: #58a6ff; }
+  .label { color: #8b949e; font-size: .9rem; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #21262d; border-radius: 6px; padding: 2px 7px; font-size: .85em; }
+  footer { margin-top: 60px; text-align: center; color: #484f58; font-size: .85rem; border-top: 1px solid #21262d; padding-top: 24px; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎲 Noise File Generator</h1>
-        <p class="subtitle">Generate and download random 20MB noise files</p>
-
-        <div class="error" id="error"></div>
-
-        <div class="controls">
-            <div class="control-group">
-                <label for="fileCount">Number of Files (1-1000):</label>
-                <input type="number" id="fileCount" min="1" max="1000" value="1000">
-            </div>
-            <div style="flex: 1; min-width: 150px; display: flex; align-items: flex-end;">
-                <button onclick="generateFiles()">Generate Files</button>
-            </div>
-        </div>
-
-        <div class="progress-section" id="progressSection">
-            <div class="progress-text">
-                Generating files: <span id="progressText">0/0</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
-
-            <div class="file-list" id="fileList"></div>
-
-            <button class="download-all" onclick="downloadAllFiles()">⬇️ Download All Files (ZIP)</button>
-
-            <div class="stats">
-                <div class="stat-item">Total Size: <span class="stat-value" id="totalSize">0 MB</span></div>
-                <div class="stat-item">Files Ready: <span class="stat-value" id="filesReady">0</span></div>
-                <div class="stat-item">Generation Time: <span class="stat-value" id="genTime">0s</span></div>
-            </div>
-        </div>
+<div class="wrap">
+  <header>
+    <h1>aitestrepo <span>⚡</span></h1>
+    <div class="sub">The chaos repository — it depends on everything.</div>
+    <div class="badges">
+      <span class="badge green">825+ languages</span>
+      <span class="badge">3800+ files</span>
+      <span class="badge">38 deploy workflows</span>
+      <span class="badge">6 package ecosystems</span>
+      <span class="badge">31 bot contributors</span>
+      <span class="badge green">automerge ON</span>
     </div>
+  </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script>
-        let generatedFiles = [];
-        let isGenerating = false;
+  <h2>What is this?</h2>
+  <p>This repository is generated by the <a href="https://perchance.org/dictionary-scraper-bot">Dictionary Scraper Bot</a> — specifically its <strong>Chaos Repo Generator</strong> tab. Every push contains real example files across many languages.</p>
 
-        function showError(message) {
-            const errorDiv = document.getElementById('error');
-            errorDiv.textContent = message;
-            errorDiv.classList.add('active');
-            setTimeout(() => errorDiv.classList.remove('active'), 5000);
-        }
+  <div class="grid">
+    <div class="card"><div class="num">825+</div><div class="label">languages with a real file each (Linguist dataset)</div></div>
+    <div class="card"><div class="num">3800+</div><div class="label">files including per-module examples for every language</div></div>
+    <div class="card"><div class="num">38</div><div class="label">deploy starter workflows (AWS → Vercel)</div></div>
+    <div class="card"><div class="num">6</div><div class="label">package ecosystems — npm, pip, Maven, Cargo, NuGet, Go</div></div>
+    <div class="card"><div class="num">31</div><div class="label">bot contributors — dependabot, renovate, imgbot…</div></div>
+    <div class="card"><div class="num">∞</div><div class="label">dependency churn (automerge + dependabot = constant PRs)</div></div>
+  </div>
 
-        function generateRandomNoise(sizeInMB) {
-            const sizeInBytes = sizeInMB * 1024 * 1024;
-            const chunks = [];
-            const chunkSize = 1024 * 1024; // 1MB chunks
+  <h2>Contents</h2>
+  <div class="card">
+    <ul>
+      <li><code>languages/&lt;lang&gt;/</code> — one directory per GitHub-supported language, each with a genuine program plus companion feature/module files.</li>
+      <li><code>languages/LANGS.json</code> — full metadata: aliases, extensions, interpreters, package managers, run commands.</li>
+      <li><code>.github/workflows/</code> — deploy-to-everything workflows, CI that compiles and runs a sample of the languages, CodeQL, dependency review, release & publish pipelines.</li>
+      <li><code>package.json</code>, <code>pyproject.toml</code>, <code>pom.xml</code>, <code>go.mod</code>, <code>Cargo.toml</code>, <code>*.csproj</code> — real dependency manifests with hundreds of sample packages.</li>
+      <li><code>.github/CODEOWNERS</code>, <code>CONTRIBUTORS.md</code> — 31 bot contributors.</li>
+      <li><code>PACKAGES.md</code>, <code>DEPLOYMENTS.md</code>, <code>README.md</code> — the full inventory.</li>
+    </ul>
+  </div>
 
-            for (let i = 0; i < sizeInBytes; i += chunkSize) {
-                const currentChunkSize = Math.min(chunkSize, sizeInBytes - i);
-                const chunk = new Uint8Array(currentChunkSize);
+  <h2>Why?</h2>
+  <p>Because it's a fun stress test of GitHub's automation ecosystem: can a repository survive <strong>dependabot PRs flowing in non-stop</strong>, <strong>automerge</strong> merging them, and a forest of CI checks across languages.</p>
 
-                for (let j = 0; j < currentChunkSize; j++) {
-                    chunk[j] = Math.floor(Math.random() * 256);
-                }
-
-                chunks.push(chunk);
-            }
-
-            return new Blob(chunks, { type: 'application/octet-stream' });
-        }
-
-        async function generateFiles() {
-            const fileCount = parseInt(document.getElementById('fileCount').value);
-
-            if (isNaN(fileCount) || fileCount < 1 || fileCount > 1000) {
-                showError('Please enter a number between 1 and 1000');
-                return;
-            }
-
-            if (isGenerating) {
-                showError('Already generating files...');
-                return;
-            }
-
-            isGenerating = true;
-            generatedFiles = [];
-
-            const progressSection = document.getElementById('progressSection');
-            const fileList = document.getElementById('fileList');
-            const progressFill = document.getElementById('progressFill');
-            const progressText = document.getElementById('progressText');
-            const generateButton = document.querySelector('button[onclick="generateFiles()"]');
-
-            progressSection.classList.add('active');
-            fileList.innerHTML = '';
-            generateButton.disabled = true;
-
-            const startTime = Date.now();
-
-            for (let i = 0; i < fileCount; i++) {
-                try {
-                    // Allow UI to update
-                    if (i % 5 === 0) {
-                        await new Promise(resolve => setTimeout(resolve, 0));
-                    }
-
-                    const filename = `noise_file_${String(i).padStart(4, '0')}.bin`;
-                    const blob = generateRandomNoise(20); // 20MB per file
-
-                    generatedFiles.push({ filename, blob });
-
-                    // Add to file list
-                    const fileItem = document.createElement('div');
-                    fileItem.className = 'file-item';
-                    fileItem.innerHTML = `
-                        <span>${filename} (20 MB)</span>
-                        <a href="#" onclick="downloadFile('${filename}', ${generatedFiles.length - 1}); return false;">Download</a>
-                    `;
-                    fileList.appendChild(fileItem);
-
-                    // Update progress
-                    const progress = ((i + 1) / fileCount) * 100;
-                    progressFill.style.width = progress + '%';
-                    progressFill.textContent = Math.round(progress) + '%';
-                    progressText.textContent = `${i + 1}/${fileCount}`;
-
-                    // Update stats
-                    document.getElementById('totalSize').textContent = ((i + 1) * 20).toLocaleString() + ' MB';
-                    document.getElementById('filesReady').textContent = (i + 1).toLocaleString();
-
-                    const elapsed = Math.round((Date.now() - startTime) / 1000);
-                    document.getElementById('genTime').textContent = elapsed + 's';
-
-                } catch (error) {
-                    showError(`Error generating file ${i}: ${error.message}`);
-                    isGenerating = false;
-                    generateButton.disabled = false;
-                    return;
-                }
-            }
-
-            isGenerating = false;
-            generateButton.disabled = false;
-            progressFill.textContent = '100%';
-        }
-
-        function downloadFile(filename, index) {
-            const file = generatedFiles[index];
-            const url = URL.createObjectURL(file.blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-
-        async function downloadAllFiles() {
-            if (generatedFiles.length === 0) {
-                showError('No files to download');
-                return;
-            }
-
-            const downloadButton = document.querySelector('.download-all');
-            downloadButton.disabled = true;
-            downloadButton.textContent = '⏳ Creating ZIP...';
-
-            try {
-                const zip = new JSZip();
-                const folder = zip.folder('noise_files');
-
-                for (let i = 0; i < generatedFiles.length; i++) {
-                    const file = generatedFiles[i];
-                    folder.file(file.filename, file.blob);
-
-                    // Update UI every 10 files
-                    if (i % 10 === 0) {
-                        downloadButton.textContent = `⏳ Creating ZIP... (${i}/${generatedFiles.length})`;
-                        await new Promise(resolve => setTimeout(resolve, 0));
-                    }
-                }
-
-                const content = await zip.generateAsync({ type: 'blob' });
-                const url = URL.createObjectURL(content);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `noise_files_${generatedFiles.length}_files.zip`;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-
-                downloadButton.textContent = '✅ Download Complete!';
-                setTimeout(() => {
-                    downloadButton.textContent = '⬇️ Download All Files (ZIP)';
-                    downloadButton.disabled = false;
-                }, 2000);
-            } catch (error) {
-                showError('Error creating ZIP: ' + error.message);
-                downloadButton.textContent = '⬇️ Download All Files (ZIP)';
-                downloadButton.disabled = false;
-            }
-        }
-    </script>
+  <footer>
+    Generated by <a href="https://perchance.org/dictionary-scraper-bot">Dictionary Scraper Bot</a> · Source on <a href="https://github.com/test7272/aitestrepo">GitHub</a>
+  </footer>
+</div>
 </body>
 </html>
