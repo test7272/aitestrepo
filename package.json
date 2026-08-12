@@ -352,7 +352,7 @@
     "pico.css": "^7.0.0",
     "got": "^2.16.0",
     "mysql": "^6.5.0",
-    "prop-types": "^5.5.0",
+    "prop-types": "^15.8.1",
     "typescript": "^1.10.0",
     "bootstrap": "^8.11.0",
     "meow": "^8.10.0",
