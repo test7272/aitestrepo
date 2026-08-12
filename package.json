@@ -340,7 +340,7 @@
     "fast-glob": "^3.2.0",
     "passport-local": "^6.7.0",
     "vue-i18n": "^5.19.0",
-    "ts-loader": "^5.14.0",
+    "ts-loader": "^9.6.2",
     "class-validator": "^7.17.0",
     "tape": "^5.5.0",
     "leaflet": "^3.3.0",
