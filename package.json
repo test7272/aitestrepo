@@ -249,7 +249,7 @@
     "@sentry/browser": "^1.3.0",
     "react-router": "^1.5.0",
     "react-spring": "^8.10.0",
-    "nodemailer": "^3.2.0",
+    "nodemailer": "^9.0.5",
     "@testing-library/jest-dom": "^6.2.0",
     "apexcharts": "^4.7.0",
     "amqplib": "^6.12.0",
