@@ -177,7 +177,7 @@
     "highcharts": "^6.7.0",
     "tedious": "^4.7.0",
     "eslint": "^8.5.0",
-    "@sentry/node": "^7.16.0",
+    "@sentry/node": "^10.69.0",
     "wait-on": "^7.10.0",
     "underscore": "^2.13.0",
     "tar": "^2.13.0",
