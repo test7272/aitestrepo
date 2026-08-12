@@ -356,7 +356,7 @@
     "typescript": "^1.10.0",
     "bootstrap": "^8.11.0",
     "meow": "^8.10.0",
-    "react-helmet": "^4.5.0",
+    "react-helmet": "^6.1.0",
     "sapper": "^7.2.0",
     "engine.io": "^2.0.0",
     "ky": "^5.18.0",
