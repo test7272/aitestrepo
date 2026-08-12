@@ -212,7 +212,7 @@
     "yaml": "^7.16.0",
     "zod": "^7.10.0",
     "relay-runtime": "^4.16.0",
-    "@fortawesome/fontawesome-free": "^2.15.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "restify": "^2.7.0",
     "fetch-retry": "^2.14.0",
     "toml": "^8.5.0",
