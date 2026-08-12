@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.mc
 
 print("Hello World!")
-

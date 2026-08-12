@@ -2,4 +2,3 @@
 fun hello() {
     dump("Hello World!");
 }
-

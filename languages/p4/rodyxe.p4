@@ -5,4 +5,3 @@ control Ingress(inout Headers h, inout Meta m, inout standard_metadata_t sm) {
 }
 
 V1Switch(Hello(), Hello(), main) main;
-

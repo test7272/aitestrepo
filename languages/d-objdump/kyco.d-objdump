@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.d-objdump
 
 print("Hello World!")
-

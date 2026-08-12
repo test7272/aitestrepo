@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.xsp-config
 
 print("Hello World!")
-

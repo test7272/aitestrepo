@@ -10,4 +10,3 @@ define process name=writer, instances=1 {
   }
 }
 run 1
-

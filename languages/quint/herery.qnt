@@ -2,4 +2,3 @@
 module hello {
     val greeting: str = "Hello World!"
 }
-

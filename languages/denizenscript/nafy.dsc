@@ -5,4 +5,3 @@ hello_world:
     debug: false
     script:
     - narrate "Hello World!"
-

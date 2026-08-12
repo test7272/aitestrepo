@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.tsp
 
 print("Hello World!")
-

@@ -6,4 +6,3 @@ DEFINE_FUNCTION CHAR[20] fnGetMessage() {
 DEFINE_PROGRAM {
     SEND_STRING 0, fnGetMessage();
 }
-

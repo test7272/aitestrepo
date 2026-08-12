@@ -8,4 +8,3 @@ RHS
     RHS1      OBJ       10
 BOUNDS
 ENDATA
-

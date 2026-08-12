@@ -5,4 +5,3 @@ Class Hello.World Extends %Persistent {
     Write "Hello World!",!
   }
 }
-

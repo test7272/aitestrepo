@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.for
 
 print("Hello World!")
-

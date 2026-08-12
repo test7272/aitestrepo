@@ -1,4 +1,3 @@
 init() {
   print("Hello World!");
 }
-

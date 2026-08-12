@@ -1,2 +1,1 @@
 WScript.Echo "Hello World!"
-

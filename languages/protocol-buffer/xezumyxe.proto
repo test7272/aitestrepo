@@ -3,4 +3,3 @@ syntax = "proto3";
 message Hello {
   string greeting = 1;
 }
-

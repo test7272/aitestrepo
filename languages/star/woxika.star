@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.star
 
 print("Hello World!")
-

@@ -4,4 +4,3 @@ class HelloWorld {
     echo("Hello World")
   }
 }
-

@@ -1,6 +1,5 @@
 #include <core>
- 
-main(){
-    print("Hello World");   
-}
 
+main(){
+    print("Hello World");
+}

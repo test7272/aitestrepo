@@ -1,4 +1,5 @@
 import os
+
 print("cwd:", os.getcwd())
 for name in sorted(os.listdir("."))[:8]:
     print("  ", name)

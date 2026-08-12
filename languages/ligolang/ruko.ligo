@@ -7,4 +7,3 @@ function main (const p : parameter; const s : storage) : return_ is
   begin
     skip
   end with ((nil : list (operation)), s)
-

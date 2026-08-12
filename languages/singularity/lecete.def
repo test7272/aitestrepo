@@ -3,4 +3,3 @@ From: ubuntu:latest
 
 %runscript
     echo "Hello World!"
-

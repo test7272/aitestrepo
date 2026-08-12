@@ -17,13 +17,25 @@ def count(path: str) -> int:
     if path == "package.json":
         return len(json.loads(text).get("dependencies", {}))
     if path == "requirements.txt":
-        return sum(1 for ln in text.splitlines() if ln.strip() and not ln.lstrip().startswith("#"))
+        return sum(
+            1
+            for ln in text.splitlines()
+            if ln.strip() and not ln.lstrip().startswith("#")
+        )
     if path == "Gemfile":
         return sum(1 for ln in text.splitlines() if re.match(r"s*gem ", ln))
     if path == "Cargo.toml":
-        return sum(1 for ln in text.splitlines() if " = " in ln and "=" in ln.split(" = ")[0].strip())
+        return sum(
+            1
+            for ln in text.splitlines()
+            if " = " in ln and "=" in ln.split(" = ")[0].strip()
+        )
     if path == "go.mod":
-        return sum(1 for ln in text.splitlines() if "	" in ln and not ln.lstrip().startswith("//"))
+        return sum(
+            1
+            for ln in text.splitlines()
+            if "	" in ln and not ln.lstrip().startswith("//")
+        )
     if path == "composer.json":
         data = json.loads(text)
         return len(data.get("require", {})) + len(data.get("require-dev", {}))
@@ -34,9 +46,17 @@ def count(path: str) -> int:
 
 def main():
     files = [
-        "package.json", "requirements.txt", "Gemfile", "Cargo.toml",
-        "go.mod", "composer.json", "pom.xml", "packages.config",
-        "pubspec.yaml", "Package.swift", "Podfile",
+        "package.json",
+        "requirements.txt",
+        "Gemfile",
+        "Cargo.toml",
+        "go.mod",
+        "composer.json",
+        "pom.xml",
+        "packages.config",
+        "pubspec.yaml",
+        "Package.swift",
+        "Podfile",
     ]
     total = 0
     print("ecosystem counts:")

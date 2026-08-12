@@ -5,4 +5,3 @@ void
 hello()
     CODE:
     printf("Hello World!");
-

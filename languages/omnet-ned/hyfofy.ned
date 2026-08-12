@@ -6,4 +6,3 @@ network HelloNetwork {
     submodules:
         hello: Hello;
 }
-

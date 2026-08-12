@@ -5,4 +5,3 @@ start() {
     ebegin "Saying hello"
     eend 0
 }
-

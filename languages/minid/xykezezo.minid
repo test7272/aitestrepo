@@ -4,4 +4,3 @@ module hello
 function main() {
     writeln("Hello World!");
 }
-

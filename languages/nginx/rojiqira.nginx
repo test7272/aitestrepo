@@ -6,4 +6,3 @@ http {
     return 200 "Hello World!";
   }
 }
-

@@ -2,4 +2,3 @@
 hello = Hello World!
 greeting = Hello, { $name }!
 goodbye = Goodbye!
-

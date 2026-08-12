@@ -2,4 +2,3 @@
 walker init {
     std.print("Hello World!")
 }
-

@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.mod
 
 print("Hello World!")
-

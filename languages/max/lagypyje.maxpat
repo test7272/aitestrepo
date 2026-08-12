@@ -7,4 +7,3 @@
   <obj class="t" id="obj-3"/>
   <comment>Hello World! in Max</comment>
 </maxpatcher>
-

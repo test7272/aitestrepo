@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.ninja
 
 print("Hello World!")
-

@@ -3,4 +3,3 @@ view: hello {
     type: string
   }
 }
-

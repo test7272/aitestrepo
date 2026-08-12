@@ -6,6 +6,5 @@
 	getstatic java/lang/System/out Ljava/io/PrintStream;
 	ldc "Hello World"
 	invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
-	return	
+	return
 .end method
-

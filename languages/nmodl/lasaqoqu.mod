@@ -6,4 +6,3 @@ NEURON {
 PROCEDURE hello() {
     printf("Hello World!\n")
 }
-

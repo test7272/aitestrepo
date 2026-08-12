@@ -6,4 +6,3 @@ module HelloWorld:
   wire out_val : UInt<1>
   out_val <= io_clock ^ io_reset
   io_out <= out_val
-

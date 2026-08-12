@@ -3,4 +3,3 @@ protocol Hello {
     string text = "Hello World!";
   }
 }
-

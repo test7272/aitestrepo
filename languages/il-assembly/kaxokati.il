@@ -5,4 +5,3 @@
   call void [mscorlib]System.Console::Write(string)
   ret
 }
-

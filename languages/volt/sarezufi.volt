@@ -2,4 +2,3 @@
 require "volt"
 
 puts "Hello World!"
-

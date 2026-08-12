@@ -7,4 +7,3 @@ abstract Hello = {
 concrete HelloEng of Hello = {
   lin helloWorld = "Hello World!";
 }
-

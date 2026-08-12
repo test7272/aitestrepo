@@ -3,4 +3,3 @@ meta:
 seq:
   - id: greeting
     contents: "Hello World!"
-

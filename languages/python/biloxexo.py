@@ -1,4 +1,5 @@
 import re
+
 sentence = "The chaos repo 42 has 7 languages and 3 builds."
 pattern = re.compile(r"\b\w+\b")
 words = pattern.findall(sentence)

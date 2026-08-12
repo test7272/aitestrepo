@@ -2,4 +2,3 @@
 # file: languages/<lang>/<random>.bst
 
 print("Hello World!")
-
