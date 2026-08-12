@@ -1,0 +1,11 @@
+version: 2
+
+groups:
+  maintainers:
+    approve_by_comment:
+      enabled: true
+      approve_regex: '^(LGTM|lgtm|Approved|\+1)'
+      reject_regex: '^(-1|NACK)'
+    reset_on_push:
+      enabled: false
+    always_pending: true

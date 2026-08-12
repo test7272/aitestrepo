@@ -1,0 +1,11 @@
+version: 1
+
+workflows:
+  - name: welcome-contributors
+    if: $reviewer == none
+    actions:
+      - '$comment("Thanks for the contribution! A maintainer will review shortly.")'
+  - name: require-description
+    if: $pull_request.body == ""
+    actions:
+      - '$warn("Please add a description to this pull request.")'

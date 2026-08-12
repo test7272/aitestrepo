@@ -1,0 +1,21 @@
+name: autofix.ci
+"on":
+  pull_request:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund || true
+      - run: npx eslint . --fix || true
+      - uses: autofix-ci/action@v1.3.1
+        continue-on-error: true

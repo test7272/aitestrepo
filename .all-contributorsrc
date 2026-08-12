@@ -1,0 +1,10 @@
+{
+  "projectName": "chaos",
+  "projectOwner": "chaos",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": []
+}

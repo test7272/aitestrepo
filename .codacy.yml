@@ -1,0 +1,9 @@
+---
+engines:
+  - name: eslint
+    enabled: true
+  - name: checkstyle
+    enabled: true
+exclude_paths:
+  - 'dist/**'
+  - 'node_modules/**'

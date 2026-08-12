@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: automerge dependabot PRs when checks pass
+    conditions:
+      - author~=^dependabot\[bot\]$
+      - check-success=CI
+      - check-success=Languages
+    actions:
+      merge:
+        method: squash
+        delete_branch: true

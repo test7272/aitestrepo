@@ -1,0 +1,12 @@
+path_classifiers:
+  test:
+    - test
+    - tests
+    - spec
+queries:
+  - exclude: py/use-of-eval
+extraction:
+  javascript:
+    index:
+      exclude:
+        - node_modules

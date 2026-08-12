@@ -1,0 +1,7 @@
+# Snyk policy file — configures the Snyk bot scans
+exclude:
+  global:
+    - node_modules/
+    - vendor/
+    - .git/
+    - dist/

@@ -1,0 +1,17 @@
+name: Mend Unified Agent Scan
+"on":
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and run Mend Unified Agent
+        env:
+          MEND_EMAIL: ${{ secrets.MEND_EMAIL }}
+          MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
+          MEND_URL: https://saas.whitesourcesoftware.com/agent
+        run: |
+          curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar
+          java -jar wss-unified-agent.jar -c . || true
+        continue-on-error: true
