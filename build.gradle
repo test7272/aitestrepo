@@ -37,7 +37,7 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:2.0.18'
     implementation 'com.squareup.sqldelight:runtime:1.5.5'
     implementation 'io.ktor:ktor-server-core-jvm:3.5.2'
-    implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.12'
     implementation 'com.squareup.sqldelight:android-driver:1.5.5'
     implementation 'org.json:json:20260719'
     implementation 'androidx.appcompat:appcompat:1.6.1'
