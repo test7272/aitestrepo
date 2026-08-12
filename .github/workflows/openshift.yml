@@ -52,13 +52,8 @@ env:
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
   IMAGE_TAGS: ""
 
-on:
-  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+"on":
   workflow_dispatch:
-  push:
-    # Edit to the branch(es) you want to build and deploy on each push.
-    branches: [ "main" ]
-
 jobs:
   # 🖊️ EDIT if you want to run vulnerability check on your project before deploying
   # the application. Please uncomment the below CRDA scan job and configure to run it in

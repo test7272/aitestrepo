@@ -15,10 +15,8 @@
 
 name: Tencent Kubernetes Engine
 
-on:
-  push:
-    branches: [ "main" ]
-
+"on":
+  workflow_dispatch:
 # Environment variables available to all jobs and steps in this workflow
 env:
   TKE_IMAGE_URL: ccr.ccs.tencentyun.com/demo/mywebapp

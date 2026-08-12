@@ -34,11 +34,8 @@
 
 name: Build and deploy an app to AKS with Helm
 
-on:
-  push:
-    branches: ["main"]
+"on":
   workflow_dispatch:
-
 env:
   AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
   CONTAINER_NAME: "your-container-name"
