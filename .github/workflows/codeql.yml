@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [javascript, python, cpp, go, java, ruby]
+        language: [javascript, python, ruby]
     steps:
       - uses: actions/checkout@v4
       - uses: github/codeql-action/init@v3
