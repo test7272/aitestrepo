@@ -4,13 +4,13 @@
     "repo": "aitestrepo",
     "branch": "main",
     "folder": "gaygay",
-    "count": 1000,
+    "count": 10000,
     "sizeMB": 39,
     "prefix": "_"
   },
-  "totalFiles": 1000,
-  "createdFiles": 1000,
-  "status": "done",
-  "updatedAt": "2026-08-13T07:57:18.497Z",
+  "totalFiles": 9000,
+  "createdFiles": 50,
+  "status": "running",
+  "updatedAt": "2026-08-13T07:58:20.301Z",
   "batch": 1
 }
