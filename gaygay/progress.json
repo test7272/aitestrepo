@@ -8,9 +8,9 @@
     "sizeMB": 39,
     "prefix": "_"
   },
-  "totalFiles": 9000,
-  "createdFiles": 500,
+  "totalFiles": 8500,
+  "createdFiles": 100,
   "status": "running",
-  "updatedAt": "2026-08-13T07:58:51.930Z",
-  "batch": 10
+  "updatedAt": "2026-08-13T08:00:12.118Z",
+  "batch": 1
 }
