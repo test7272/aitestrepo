@@ -9,8 +9,8 @@
     "prefix": "__"
   },
   "totalFiles": 1000000,
-  "createdFiles": 20000,
+  "createdFiles": 40000,
   "status": "running",
-  "updatedAt": "2026-08-13T13:00:31.821Z",
-  "batch": 1
+  "updatedAt": "2026-08-13T13:00:38.099Z",
+  "batch": 2
 }
