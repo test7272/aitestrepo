@@ -1,0 +1,17 @@
+{
+  "config": {
+    "owner": "test7272",
+    "repo": "aitestrepo",
+    "branch": "main",
+    "folders": 20,
+    "folderPrefix": "gaygay",
+    "filesPerFolder": 1000000,
+    "sizeMB": 39,
+    "prefix": null
+  },
+  "totalFiles": 20000000,
+  "createdFiles": 1000,
+  "status": "running",
+  "updatedAt": "2026-08-13T13:56:36.506Z",
+  "batch": 1
+}
