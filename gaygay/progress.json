@@ -6,11 +6,11 @@
     "folder": "gaygay",
     "count": 100000,
     "sizeMB": 39,
-    "prefix": "_"
+    "prefix": "."
   },
-  "totalFiles": 90000,
-  "createdFiles": 90000,
-  "status": "done",
-  "updatedAt": "2026-08-13T10:13:54.320Z",
-  "batch": 9
+  "totalFiles": 91200,
+  "createdFiles": 10000,
+  "status": "running",
+  "updatedAt": "2026-08-13T10:14:54.242Z",
+  "batch": 1
 }
